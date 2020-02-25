@@ -1,4 +1,4 @@
-## 24.02.20
+### 24.02.20
 
 BlueFrag vulnerability was choosen as main theme of the progect.
 
@@ -13,3 +13,11 @@ Main information from : [https://seclists.org/fulldisclosure/2020/Feb/10](https:
 Donwloaded book "Android System Programming for beginner". Pushed on google drive.
 
 [https://www.electronics-notes.com/articles/connectivity/bluetooth/host-l2cap-sdp-gap.php](https://www.electronics-notes.com/articles/connectivity/bluetooth/host-l2cap-sdp-gap.php) - information about L2CAP and GAP
+
+### 25.02.20
+
+Installing Android Studio + setting android virual device in addition with KVM. Guide: [https://github.com/uw-it-aca/spacescout-android/wiki/1.-Setting-Up-Android-Studio-on-Ubuntu](https://github.com/uw-it-aca/spacescout-android/wiki/1.-Setting-Up-Android-Studio-on-Ubuntu)
+
+First lauch of AVD. Bluetooth port is not supported in Android Studio. Moving to virtual box as [there](https://stackoverflow.com/questions/22604305/how-to-use-android-emulator-for-testing-bluetooth-application)
+
+[Receiving HCI Bluetooth logs from Android.](http://www.fte.com/WebHelp/BPA600/Content/Documentation/WhitePapers/BPA600/Encryption/GettingAndroidLinkKey/RetrievingHCIlog.htm)
