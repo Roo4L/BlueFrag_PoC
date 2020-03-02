@@ -22,10 +22,18 @@ First lauch of AVD. Bluetooth port is not supported in Android Studio. Moving to
 
 [Receiving HCI Bluetooth logs from Android.](http://www.fte.com/WebHelp/BPA600/Content/Documentation/WhitePapers/BPA600/Encryption/GettingAndroidLinkKey/RetrievingHCIlog.htm)
 
-## 27.02.20
+### 27.02.20
 
 Analyzed the logs from forum. Seems like general trouble in previous patch was in strange behavior of memcpy() : when argument is below zero the memcpy is taking argument as extremely high(because memcpy argument is unsigned). But this isn't leading to system crash on Android 8 and 9. The following logic need to be further analyzed(assembler code). Still undefined method how to RCE using this bug.
 
-## 29.02.20
+### 29.02.20
 
 Found PoC code for [system crash](https://github.com/leommxj/cve-2020-0022/blob/master/poc.c) using BlueFrag vulnerability. [Source from](https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fbestwing.me%2FAndroid-8.1-memcpy-func.html). Code requires knowledge of C BT libs. [Guide is here](https://people.csail.mit.edu/albert/bluez-intro/c404.html)
+
+### 2.03.20
+
+REMEMBER: you can use bettercap utility to trace BT devices and send HEX information
+
+Made notes about unclear moments in crash PoC, which need further exploration.
+
+
