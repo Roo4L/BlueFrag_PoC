@@ -36,4 +36,7 @@ REMEMBER: you can use bettercap utility to trace BT devices and send HEX informa
 
 Made notes about unclear moments in crash PoC, which need further exploration.
 
+### 3.03.20
+
+Fully analyzed crash PoC file with my notes (some function may still persist unclear, but it's caused by lack of information. SetUped Android x86 emulator using VirtualBox (required Secure Boot disable), but process of bluetooth enabling is still not implemented. 
 
