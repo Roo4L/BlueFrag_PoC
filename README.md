@@ -40,3 +40,6 @@ Made notes about unclear moments in crash PoC, which need further exploration.
 
 Fully analyzed crash PoC file with my notes (some function may still persist unclear, but it's caused by lack of information. SetUped Android x86 emulator using VirtualBox (required Secure Boot disable), but process of bluetooth enabling is still not implemented. 
 
+### 4.03.20
+
+Successfully installed Android x86 and realised BT and BLE scanning. [Guide](https://www.pcsuggest.com/linux-bluetooth-setup-hcitool-bluez/) Trying to establish tight between Mi Phone and virtual device.
