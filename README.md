@@ -43,3 +43,6 @@ Fully analyzed crash PoC file with my notes (some function may still persist unc
 ### 4.03.20
 
 Successfully installed Android x86 and realised BT and BLE scanning. [Guide](https://www.pcsuggest.com/linux-bluetooth-setup-hcitool-bluez/) Trying to establish tight between Mi Phone and virtual device.
+
+### 5.03.20
+[Hcitool device init](https://gist.github.com/lexruee/7591755e7d8015f9f8b4) Seem like code doesn't crash BT device.
