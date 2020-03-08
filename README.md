@@ -46,3 +46,7 @@ Successfully installed Android x86 and realised BT and BLE scanning. [Guide](htt
 
 ### 5.03.20
 [Hcitool device init](https://gist.github.com/lexruee/7591755e7d8015f9f8b4) Seem like code doesn't crash BT device.
+
+### 6.03.20
+
+Conducted expiriment on several android devices. BLE module crashed successfully. After crash device reboot automaticly and return to usual pipe sequence.
