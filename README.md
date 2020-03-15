@@ -50,3 +50,9 @@ Successfully installed Android x86 and realised BT and BLE scanning. [Guide](htt
 ### 6.03.20
 
 Conducted expiriment on several android devices. BLE module crashed successfully. After crash device reboot automaticly and return to usual pipe sequence.
+
+### 15.03.20
+
+Bad news: android system use ASLR. This may lead to crucial troubles in our progect. The solution can be found in method used in BlueBorn attack.
+
+Analyzing possible memory range for my manipulations. [Google git code](https://android.googlesource.com/platform/system/bt/+/3cb7149d8fed2d7d77ceaa95bf845224c4db3baf/) Can't find function STREAM_TO_UINT16 (used for calculating partial_packet->len)
