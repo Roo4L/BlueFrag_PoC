@@ -56,3 +56,7 @@ Conducted expiriment on several android devices. BLE module crashed successfully
 Bad news: android system use ASLR. This may lead to crucial troubles in our progect. The solution can be found in method used in BlueBorn attack.
 
 Analyzing possible memory range for my manipulations. [Google git code](https://android.googlesource.com/platform/system/bt/+/3cb7149d8fed2d7d77ceaa95bf845224c4db3baf/) Can't find function STREAM_TO_UINT16 (used for calculating partial_packet->len)
+
+### 19.03.20
+
+Chinese friends code was analysed. Understood mechanics of memcpy problem.
