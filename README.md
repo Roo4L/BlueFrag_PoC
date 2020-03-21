@@ -59,4 +59,8 @@ Analyzing possible memory range for my manipulations. [Google git code](https://
 
 ### 19.03.20
 
-Chinese friends code was analysed. Understood mechanics of memcpy problem.
+Chinese friends code was analysed. Understood mechanics of memcpy problem. Problem of memory range still unsolved. Decided to conduct dynamic debug using IDA. 
+
+### 20.03.20
+
+Successfully installed Android 8 (dotOS) on LeEco Le 2 for futher dynamic debugging using IDA. Rooted device with Magisk. [Installlaion guide](https://www.xda-developers.com/how-to-install-magisk/) Trying to connect device using adb, but strucked in error linked with ["text relocations](https://android.googlesource.com/platform/bionic/+/master/android-changes-for-ndk-developers.md).
