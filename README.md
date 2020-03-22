@@ -63,7 +63,7 @@ Chinese friends code was analysed. Understood mechanics of memcpy problem. Probl
 
 ### 20.03.20
 
-Successfully installed Android 8 (dotOS) on LeEco Le 2 for futher dynamic debugging using IDA. Rooted device with Magisk. [Installlaion guide](https://www.xda-developers.com/how-to-install-magisk/) Trying to connect device using adb, but strucked in error linked with ["text relocations](https://android.googlesource.com/platform/bionic/+/master/android-changes-for-ndk-developers.md).
+Successfully installed Android 8 (dotOS) [on LeEco Le 2](http://4pda.ru/forum/index.php?showtopic=799557&st=5040#entry70471648) for futher dynamic debugging using IDA. Rooted device with Magisk. [Installlaion guide](https://www.xda-developers.com/how-to-install-magisk/) Trying to connect device using adb, but strucked in error linked with ["text relocations](https://android.googlesource.com/platform/bionic/+/master/android-changes-for-ndk-developers.md).
 
 ### 21.03.20
 
