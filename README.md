@@ -67,4 +67,4 @@ Successfully installed Android 8 (dotOS) on LeEco Le 2 for futher dynamic debugg
 
 ### 21.03.20
 
-Changing boot.img variables in order to solve the problem above. [Guide](https://gist.github.com/gregor160300/068c06c0314c19855e999473708c7635). Facing some troubles with mkbootfs. Successfully changed boot.img variables. Compiled 3 testing newboot.img, but all tests were failed. Considering about problem in newboot.img archiving, despite package was assembled using cpio and gzip. 
+[Changing boot.img variables](https://ctf-wiki.github.io/ctf-wiki/android/basic_reverse/dynamic/dynamic_debug/) in order to solve the problem above. [Guide](https://gist.github.com/gregor160300/068c06c0314c19855e999473708c7635). Facing some troubles with mkbootfs. Successfully changed boot.img variables. Compiled 3 testing newboot.img, but all tests were failed. Considering about problem in newboot.img archiving, despite package was assembled using cpio and gzip.
