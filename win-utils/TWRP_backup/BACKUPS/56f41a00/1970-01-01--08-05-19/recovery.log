@@ -1,0 +1,930 @@
+Starting TWRP 3.0.2-0 Modify by www.ydss.cn on Thu Jan  1 00:04:47 1970
+ (pid 342)
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/sys/class/android_usb/android0/f_mass_storage/lun0/file' does not exist, USB storage mode disabled
+TW_INCLUDE_CRYPTO := true
+I:TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+I:Found brightness file at '/sys/class/leds/lcd-backlight/brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:LANG: zh_CN
+Starting the UI...Overlay graphics may work (mdssfb_80000), but not enabled. Use TW_TARGET_USES_QCOM_BSP := true to enable.
+setting DRM_FORMAT_RGB565 and GGL_PIXEL_FORMAT_RGB_565
+cannot find/open a drm device: No such file or directory
+fb0 reports (possibly inaccurate):
+  vi.bits_per_pixel = 32
+  vi.red.offset   =   0   .length =   8
+  vi.green.offset =   8   .length =   8
+  vi.blue.offset  =  16   .length =   8
+  fi.smem_len: 16711680
+  fi.line_length: 4352
+setting GGL_PIXEL_FORMAT_RGBA_8888
+double buffered
+framebuffer: 0 (1080 x 1920)
+Using fbdev graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+=> Linking mtab
+Renaming regular /etc/recovery.fstab -> /etc/recovery.fstab.bak
+Moving /etc/twrp.fstab -> /etc/recovery.fstab
+=> Processing recovery.fstab
+I:Processing '/boot'
+I:Processing '/cache'
+I:Processing '/data'
+I:Processing '/system'
+I:Processing '/recovery'
+I:Processing '/system_image'
+I:Processing '/adspso'
+I:Processing '/cmnlib'
+I:Processing '/ddr'
+I:Processing '/devinfo'
+I:Processing '/emmc_appsboot'
+I:Processing '/hyp'
+I:Processing '/keymaster'
+I:Processing '/misc'
+I:Processing '/NON-HLOS'
+I:Processing '/oemconfig'
+I:Processing '/rpm'
+I:Processing '/sbl1'
+I:Processing '/st1'
+I:Processing '/st2'
+I:Processing '/tz'
+I:Processing '/usbstorage'
+I:Created '/usbstorage' folder.
+I:Setting up '/data' as data/media emulated storage.
+I:Created '/sdcard' folder.
+I:mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:Setting up '/data' as data/media emulated storage.
+I:mount -o bind '/data/media' '/sdcard' process ended with RC=0
+I:mount -o bind '/data/media/0' '/sdcard' process ended with RC=0
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:Settings storage is '/data/media/0'
+I:Decrypt adopted storage starting
+I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
+Updating partition details...
+I:Data backup size is 0MB, free: 24013MB.
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+
+
+Partition Logs:
+/boot | /dev/block/mmcblk0p23 | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p23
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/cache | /dev/block/mmcblk0p28 | Size: 247MB Used: 0MB Free: 247MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p28
+   Display_Name: Cache
+   Storage_Name: Cache
+   Backup_Path: /cache
+   Backup_Name: cache
+   Backup_Display_Name: Cache
+   Storage_Path: /cache
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/data | /dev/block/mmcblk0p56 | Size: 24057MB Used: 0MB Free: 24013MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage Retain_Layout_Version 
+   Symlink_Path: /data/media/0
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p56
+   Length: -16384
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media/0
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   MTP_Storage_ID: 65537
+
+/system | /dev/block/mmcblk0p27 | Size: 3967MB Used: 7MB Free: 3959MB Backup Size: 7MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p27
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/recovery | /dev/block/mmcblk0p24 | Size: 64MB
+   Flags: IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p24
+   Display_Name: Recovery
+   Storage_Name: recovery
+   Backup_Path: /recovery
+   Backup_Name: recovery
+   Backup_Display_Name: Recovery
+   Storage_Path: /recovery
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/system_image | /dev/block/mmcblk0p27 | Size: 4096MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Primary_Block_Device: /dev/block/mmcblk0p27
+   Display_Name: System Image
+   Storage_Name: system_image
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System Image
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/adspso | /dev/block/mmcblk0p12 | Size: 16MB
+   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p12
+   Display_Name: firmware(底层固件)
+   Storage_Name: firmware(底层固件)
+   Backup_Path: /adspso
+   Backup_Name: adspso
+   Backup_Display_Name: firmware(底层固件)
+   Storage_Path: /adspso
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/cmnlib | /dev/block/mmcblk0p49 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p49
+   Display_Name: cmnlib
+   Storage_Name: cmnlib
+   Backup_Path: /cmnlib
+   Backup_Name: cmnlib
+   Backup_Display_Name: cmnlib
+   Storage_Path: /cmnlib
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/ddr | /dev/block/mmcblk0p17 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p17
+   Display_Name: ddr
+   Storage_Name: ddr
+   Backup_Path: /ddr
+   Backup_Name: ddr
+   Backup_Display_Name: ddr
+   Storage_Path: /ddr
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/devinfo | /dev/block/mmcblk0p25 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p25
+   Display_Name: devinfo
+   Storage_Name: devinfo
+   Backup_Path: /devinfo
+   Backup_Name: devinfo
+   Backup_Display_Name: devinfo
+   Storage_Path: /devinfo
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/emmc_appsboot | /dev/block/mmcblk0p21 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p21
+   Display_Name: emmc_appsboot
+   Storage_Name: emmc_appsboot
+   Backup_Path: /emmc_appsboot
+   Backup_Name: emmc_appsboot
+   Backup_Display_Name: emmc_appsboot
+   Storage_Path: /emmc_appsboot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/hyp | /dev/block/mmcblk0p10 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p10
+   Display_Name: hyp
+   Storage_Name: hyp
+   Backup_Path: /hyp
+   Backup_Name: hyp
+   Backup_Display_Name: hyp
+   Storage_Path: /hyp
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/keymaster | /dev/block/mmcblk0p50 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p50
+   Display_Name: keymaster
+   Storage_Name: keymaster
+   Backup_Path: /keymaster
+   Backup_Name: keymaster
+   Backup_Display_Name: keymaster
+   Storage_Path: /keymaster
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/misc | /dev/block/mmcblk0p29 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p29
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/NON-HLOS | /dev/block/mmcblk0p1 | Size: 84MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p1
+   Display_Name: NON-HLOS
+   Storage_Name: NON-HLOS
+   Backup_Path: /NON-HLOS
+   Backup_Name: NON-HLOS
+   Backup_Display_Name: NON-HLOS
+   Storage_Path: /NON-HLOS
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/oemconfig | /dev/block/mmcblk0p15 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p15
+   Display_Name: oemconfig
+   Storage_Name: oemconfig
+   Backup_Path: /oemconfig
+   Backup_Name: oemconfig
+   Backup_Display_Name: oemconfig
+   Storage_Path: /oemconfig
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/rpm | /dev/block/mmcblk0p6 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p6
+   Display_Name: rpm
+   Storage_Name: rpm
+   Backup_Path: /rpm
+   Backup_Name: rpm
+   Backup_Display_Name: rpm
+   Storage_Path: /rpm
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/sbl1 | /dev/block/mmcblk0p4 | Size: 0MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p4
+   Display_Name: sbl1
+   Storage_Name: sbl1
+   Backup_Path: /sbl1
+   Backup_Name: sbl1
+   Backup_Display_Name: sbl1
+   Storage_Path: /sbl1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/st1 | /dev/block/mmcblk0p13 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p13
+   Display_Name: st1
+   Storage_Name: st1
+   Backup_Path: /st1
+   Backup_Name: st1
+   Backup_Display_Name: st1
+   Storage_Path: /st1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/st2 | /dev/block/mmcblk0p14 | Size: 1MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p14
+   Display_Name: st2
+   Storage_Name: st2
+   Backup_Path: /st2
+   Backup_Name: st2
+   Backup_Display_Name: st2
+   Storage_Path: /st2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/tz | /dev/block/mmcblk0p8 | Size: 2MB
+   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
+   SubPartition_Of: /adspso
+   Primary_Block_Device: /dev/block/mmcblk0p8
+   Display_Name: tz
+   Storage_Name: tz
+   Backup_Path: /tz
+   Backup_Name: tz
+   Backup_Display_Name: tz
+   Storage_Path: /tz
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/usbstorage |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
+   Primary_Block_Device: /dev/block/sda1
+   Alternate_Block_Device: /dev/block/sda
+   Display_Name: U盘(USB Storage)
+   Storage_Name: U盘(USB Storage)
+   Backup_Path: /usbstorage
+   Backup_Name: usbstorage
+   Backup_Display_Name: U盘(USB Storage)
+   Storage_Path: /usbstorage
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   Mount_Options: utf8
+   MTP_Storage_ID: 65538
+
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page about_me
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page advanced
+I:Loading page Tools
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page installsu
+I:Loading page disable_stock_recovery_replace
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+Modify by Timesleader@www.romxz.cn
+Startup Commands: 
+ro.adb.qemud=1
+ro.adb.secure=0
+ro.com.google.clientidbase=android-google
+ro.com.android.dataroaming=true
+ro.com.android.wifi-watchlist=GoogleGuest
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.boot.emmc=true
+ro.boot.console=ttyHSL0
+ro.boot.selinux=permissive
+ro.boot.baseband=msm
+ro.boot.hardware=qcom
+ro.boot.serialno=56f41a00
+ro.boot.keymaster=1
+ro.boot.bootdevice=7824900.sdhci
+ro.boot.fusestatus=true
+ro.boot.veritymode=enforcing
+ro.boot.verifiedbootstate=green
+ro.hwui.path_cache_size=32
+ro.hwui.layer_cache_size=48
+ro.hwui.texture_cache_size=72
+ro.hwui.gradient_cache_size=1
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_large_cache_height=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.texture_cache_flushrate=0.4
+ro.omni.device=Le X520
+ro.omni.version=6.0.1-20160610-Le X820-HOMEMADE
+ro.twrp.boot=1
+ro.twrp.version=3.0.2-0 Modify by www.ydss.cn
+ro.wifi.channels=
+ro.allow.mock.location=0
+ro.board.platform=msm8994
+ro.build.id=MOB30M
+ro.build.date=2016年 06月 10日 星期五 11:39:49 CST
+ro.build.date.utc=0
+ro.build.host=linux
+ro.build.tags=test-keys
+ro.build.type=userdebug
+ro.build.user=denghuihui
+ro.build.flavor=omni_Le X820/Le X520-userdebug
+ro.build.display.id=omni_Le X820-userdebug 6.0.1 MOB30M eng.denghuihui.20160610.113700 test-keys
+ro.build.version.sdk=23
+ro.build.version.base_os=
+ro.build.version.release=6.0.1
+ro.build.version.codename=REL
+ro.build.version.incremental=eng.denghuihui.20160610.113700
+ro.build.version.preview_sdk=0
+ro.build.version.all_codenames=REL
+ro.build.version.security_patch=2016-06-01
+ro.build.characteristics=default
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.alarm_alert=Argon.ogg
+ro.config.notification_sound=pixiedust.ogg
+ro.dalvik.vm.native.bridge=0
+ro.secure=1
+ro.zygote=zygote32
+ro.carrier=unknown
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=armeabi-v7a,armeabi
+ro.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.product.cpu.abilist64=
+ro.product.name=Le2_CN
+ro.product.board=MSM8976
+ro.product.brand=LeEco
+ro.product.model=Le X520
+ro.product.device=le_s2
+ro.product.locale=en-US
+ro.product.manufacturer=LeEco
+ro.baseband=msm
+ro.bootmode=unknown
+ro.hardware=qcom
+ro.revision=0
+ro.serialno=56f41a00
+ro.bootimage.build.date=2016年 06月 10日 星期五 11:42:31 CST
+ro.bootimage.build.date.utc=1465530151
+ro.bootimage.build.fingerprint=LeEco/omni_Le X520/Le X520:6.0.1/MOB30M/denghuihui06101138:userdebug/test-keys
+ro.bootloader=unknown
+ro.debuggable=1
+ro.modversion=OmniROM-6.0.1-20160610-Le X820-HOMEMADE
+ro.factorytest=0
+ro.setupwizard.enterprise_mode=1
+net.bt.name=Android
+net.change=net.bt.name
+init.svc.adbd=running
+init.svc.healthd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.set_permissive=stopped
+twrp.crash_counter=0
+twrp.action_complete=0
+debug.atrace.tags.enableflags=0
+dalvik.vm.isa.arm.variant=generic
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=generic
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+persist.sys.usb.config=adb
+persist.sys.dalvik.vm.lib.2=libart
+persist.sys.root_access=1
+service.adb.root=1
+keyguard.no_require_sim=true
+
+Running boot script...
+cat: can't open '/system/build.prop': No such file or directory
+0+0 records in
+0+0 records out
+0 bytes (0B) copied, 0.001624 seconds, 0B/s
+usage: setprop <key> <value>
+I:/sbin/postrecoveryboot.sh process ended with RC=0
+Done.
+I:Copying file /cache/recovery/log to /cache/recovery/last_log
+tw_get_context got selinux context: u:object_r:system_data_file:s0
+I:Got default contexts and file mode for storage files.
+I:Attempt to load settings from settings file...
+I:InfoManager file '/data/media/0/TWRP/.twrps' not found.
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:Copying file /etc/recovery.fstab to /cache/recovery/recovery.fstab
+I:Version number saved to '/cache/recovery/.version'
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+I:TWFunc::Set_Brightness: Setting brightness control to 255
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-01--08-04-49
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: will attempt to use the ats files now.
+I:TWFunc::Fixup_Time: no ats files found, leaving untouched!
+I:Switching packages (TWRP)
+I:Set page: 'system_readonly'
+I:Set overlay: 'select_language'
+I:Set overlay: ''
+I:operation_start: 'Set Language'
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:operation_end - status=0
+I:Loading package: TWRP (/data/media/0/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Failed to load package '/data/media/0/TWRP/theme/ui.zip'.
+I:Attempting to reload stock theme...
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page reboot
+I:Loading page about_me
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page advanced
+I:Loading page Tools
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page trydecrypt
+I:Loading page terminalcommand
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page installsu
+I:Loading page disable_stock_recovery_replace
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Switching packages (TWRP)
+I:Loading language 'en'
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/0/TWRP/BACKUPS/56f41a00'
+I:Is_Mounted: Unable to find partition for path '/vendor'
+I:operation_start: 'Toggle System Mount'
+I:operation_end - status=1
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Enabling MTP during startup
+I:Starting MTP
+Starting MTP
+I:sending message to add 65537 '/data/media/0' 'Internal Storage'
+I:Message sent, add storage ID: 65537
+MTP Enabled
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+Using '/dev/mtp_usb' for MTP device.
+created new mtpserver object
+MtpServer::run fd: 25
+mtppipe add storage 65537 '/data/media/0'
+MtpStorage id: 65537 path: /data/media/0
+I:Set page: 'backup'
+I:Set page: 'backup_run'
+I:operation_start: 'Nandroid'
+Updating partition details...
+I:Data backup size is 0MB, free: 24013MB.
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Cannot find file /system/build.prop
+I:Unable to open /system/build.prop for getting 'ro.build.display.id'.
+I:Backup Name is: '1970-01-01--08-05-19'
+I:Full_Backup_Path is: '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/'
+I:Calculating backup details...
+ * Total number of partitions to back up: 15
+ * Total size of all data: 110MB
+ * Available space: 24013MB
+[BACKUP STARTED]
+ * Backup Folder: /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/
+Backing up firmware(底层固件)...
+I:Reading '/dev/block/mmcblk0p12', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//adspso.emmc.win'
+Backing up cmnlib...
+I:Reading '/dev/block/mmcblk0p49', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//cmnlib.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/cmnlib.emmc.win: 718cfcd803f46edb48cec6dd7980089d  cmnlib.emmc.win
+
+ * MD5 Created.
+Backing up ddr...
+I:Reading '/dev/block/mmcblk0p17', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//ddr.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/ddr.emmc.win: 81a1b4bb7b13128adae5bca213b73aaa  ddr.emmc.win
+
+ * MD5 Created.
+Backing up devinfo...
+I:Reading '/dev/block/mmcblk0p25', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//devinfo.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/devinfo.emmc.win: 71463abff59b786fe87348a38b0fa520  devinfo.emmc.win
+
+ * MD5 Created.
+Backing up emmc_appsboot...
+I:Reading '/dev/block/mmcblk0p21', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//emmc_appsboot.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/emmc_appsboot.emmc.win: 6185b1e442389194d0acaa2b2aafee9f  emmc_appsboot.emmc.win
+
+ * MD5 Created.
+Backing up hyp...
+I:Reading '/dev/block/mmcblk0p10', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//hyp.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/hyp.emmc.win: fc8212d28584df56cc99e1deb2832ae4  hyp.emmc.win
+
+ * MD5 Created.
+Backing up keymaster...
+I:Reading '/dev/block/mmcblk0p50', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//keymaster.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/keymaster.emmc.win: 44f6454c9001a3b4cfa896d2a3a3ab84  keymaster.emmc.win
+
+ * MD5 Created.
+Backing up misc...
+I:Reading '/dev/block/mmcblk0p29', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//misc.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/misc.emmc.win: 79c954d8ffa627a60048ca23cab637bf  misc.emmc.win
+
+ * MD5 Created.
+Backing up NON-HLOS...
+I:Reading '/dev/block/mmcblk0p1', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//NON-HLOS.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/NON-HLOS.emmc.win: d8c24f33d85c275d6d4be5f218462186  NON-HLOS.emmc.win
+
+ * MD5 Created.
+Backing up oemconfig...
+I:Reading '/dev/block/mmcblk0p15', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//oemconfig.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/oemconfig.emmc.win: 0f343b0931126a20f133d67c2b018a3b  oemconfig.emmc.win
+
+ * MD5 Created.
+Backing up rpm...
+I:Reading '/dev/block/mmcblk0p6', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//rpm.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/rpm.emmc.win: 2b83b7eff0e7671153416b9a876a0007  rpm.emmc.win
+
+ * MD5 Created.
+Backing up sbl1...
+I:Reading '/dev/block/mmcblk0p4', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//sbl1.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/sbl1.emmc.win: 437e1b1a46a5f08a637252dcb5b10062  sbl1.emmc.win
+
+ * MD5 Created.
+Backing up st1...
+I:Reading '/dev/block/mmcblk0p13', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//st1.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/st1.emmc.win: 251b0519bc65b3e59dea6a53e538cce1  st1.emmc.win
+
+ * MD5 Created.
+Backing up st2...
+I:Reading '/dev/block/mmcblk0p14', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//st2.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/st2.emmc.win: 7a365bdd4c54b4af3bab0cf84bdee213  st2.emmc.win
+
+ * MD5 Created.
+Backing up tz...
+I:Reading '/dev/block/mmcblk0p8', writing '/data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19//tz.emmc.win'
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/tz.emmc.win: 45aa19e387911e9c4b53a1c5113d3b81  tz.emmc.win
+
+ * MD5 Created.
+I:Partition Backup time: 2
+ * Generating md5...
+I:MD5 for /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/adspso.emmc.win: af900db9b1691ae7145df94b26334786  adspso.emmc.win
+
+ * MD5 Created.
+Average backup rate for imaged drives: 55 MB/sec
+[110 MB TOTAL BACKED UP]
+Updating partition details...
+I:Data backup size is 0MB, free: 23903MB.
+I:Unable to mount '/usbstorage'
+I:Actual block device: '', current file system: 'vfat'
+...done
+I:Unmounting main partitions...
+[BACKUP COMPLETED IN 3 SECONDS]
+I:Copying file /tmp/recovery.log to /data/media/0/TWRP/BACKUPS/56f41a00/1970-01-01--08-05-19/recovery.log
