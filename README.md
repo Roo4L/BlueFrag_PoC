@@ -68,3 +68,15 @@ Successfully installed Android 8 (dotOS) [on LeEco Le 2](http://4pda.ru/forum/in
 ### 21.03.20
 
 [Changing boot.img variables](https://ctf-wiki.github.io/ctf-wiki/android/basic_reverse/dynamic/dynamic_debug/) in order to solve the problem above. [Guide](https://gist.github.com/gregor160300/068c06c0314c19855e999473708c7635). Facing some troubles with mkbootfs. Successfully changed boot.img variables. Compiled 3 testing newboot.img, but all tests were failed. Considering about problem in newboot.img archiving, despite package was assembled using cpio and gzip.
+
+### 30.03.20
+
+Successfully repacked boot.img of LeEco Le2 on custom android firmware. Failed trying to find problems in manual repacking using extracted bootimg.cfg, so decided to use Android Image Kitchen pack on linux. Repacked image now don't lead to system crash, but boot variables haven't change. Trying to figure out what caused this problem.
+
+### 31.03.20
+
+Figured problem above. 2 steps were done. First, root was reinstalled after changing boot.img. Second, Magisk settings were changed in Magisk Manager, so root became visible to every process in the system.
+
+### 01.04.20
+
+Successfully set connection between IDA PRO win version and rooted android device on custom OS. Face several troubles during establishing this connection. Most of steps were made using [following guide](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/debugging-android-libraries-using-ida/). 1) Adb had no rights to remount android device. Solved routing device with Magisk. Be careful: root modifes bootloader, so device should be rooted after changing boot.img. 2) Adb couldn't execute android_server on device. There were guilty several facts. The main, IDA version was to old and guide, which was followed was written 7 years ago. So, some of changes were made. 3)Android server and device bitness were different. Be careful and check bitness of debugged system.
