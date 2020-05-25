@@ -88,5 +88,7 @@ Got stuck with indefined behavior of bluetooth device after first leak. HID save
 05-25 16:52:31.293  2862  3260 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
 ```
 Tried to look for the information about HID Service managment realization, but didn't discovered anything useful. Can't identify what priority "-1" actually means. Looked up this resources:
+
 [Stack OverFlow issue](https://stackoverflow.com/questions/10444063/android-bluetooth-hid-implementation)
+
 [Bluetooth Specification](https://drive.google.com/open?id=1SzzxdNAe_wPpbr3LoCnzPpN_mdP-zgWG)
