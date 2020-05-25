@@ -84,4 +84,6 @@ Successfully set connection between IDA PRO win version and rooted android devic
 ### 25.05.20
 
 Got stuck with indefined behavior of bluetooth device after first leak. HID saves priority for device from which leaked was managed and bans further interactinos of target with host device.
-> 05-25 16:52:31.293  2862  3260 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+```
+05-25 16:52:31.293  2862  3260 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+```
