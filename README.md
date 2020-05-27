@@ -90,3 +90,7 @@ Got stuck with indefined behavior of bluetooth device after first leak. HID save
 Tried to look for the information about HID Service managment realization, but didn't discovered anything useful. Can't identify what priority "-1" actually means. Looked up this resources:
 * [Stack OverFlow issue](https://stackoverflow.com/questions/10444063/android-bluetooth-hid-implementation)
 * [Bluetooth Specification](https://drive.google.com/open?id=1SzzxdNAe_wPpbr3LoCnzPpN_mdP-zgWG)
+
+### 26.05.20
+
+Couldn't guess whether the problem in Anroid Oreo or in DotOS. Trying to conduct tests on virtual machine using Androidx86, but couldn't estabslish debug bridge between virtual device and PC.
