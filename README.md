@@ -94,3 +94,8 @@ Tried to look for the information about HID Service managment realization, but d
 ### 26.05.20
 
 Couldn't guess whether the problem in Anroid Oreo or in DotOS. Trying to conduct tests on virtual machine using Androidx86, but couldn't estabslish debug bridge between virtual device and PC.
+
+### 27.05.20
+Guide list:
+* [install android_x86 on VM](https://www.howtogeek.com/164570/how-to-install-android-in-virtualbox/)
+* [common issues on android_x86 VM](https://www.android-x86.org/documentation/virtualbox.html)
