@@ -95,7 +95,11 @@ Tried to look for the information about HID Service managment realization, but d
 
 Couldn't guess whether the problem in Anroid Oreo or in DotOS. Trying to conduct tests on virtual machine using Androidx86, but couldn't estabslish debug bridge between virtual device and PC.
 
-### 27.05.20
+### 27.05.20 - 28.05.20
 Guide list:
 * [install android_x86 on VM](https://www.howtogeek.com/164570/how-to-install-android-in-virtualbox/)
 * [common issues on android_x86 VM](https://www.android-x86.org/documentation/virtualbox.html)
+* [THE ONLY ONE TRUE WAY HOW TO SETUP VM FOR ANDROIDx86](https://www.youtube.com/watch?v=Pet4LZnZhDU) and [Answer from stackoverflow](https://stackoverflow.com/questions/18223402/how-to-start-gui-from-command-line-in-android-x86)
+* Also it would be nice to add VM in list of apps using GPU
+* If you want to start VM in debug mode: ``` C:\Program Files\Oracle\VirtualBox>vboxmanage startvm "SomeVM" -E VBOX_GUI_DBG_AUTO_SHOW=true -E VBOX_GUI_DBG_ENABLED=true ``` 
+
