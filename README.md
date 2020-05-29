@@ -103,3 +103,29 @@ Guide list:
 * Also it would be nice to add VM in list of apps using GPU
 * If you want to start VM in debug mode: ``` C:\Program Files\Oracle\VirtualBox>vboxmanage startvm "SomeVM" -E VBOX_GUI_DBG_AUTO_SHOW=true -E VBOX_GUI_DBG_ENABLED=true ``` 
 
+
+### 29.05.20
+ 
+Finaly conducted tests with a help of @javaprog, who sent me 5 hci log files. The expirement have shown that provided scripts work on other android device without any problem. Comparing my-logs and firer-logs the following diffs have been found:
+* additional line in firer-logs/log2.txt ``` ***05-29 19:22:43.833 24812 24844 I BluetoothHeadsetClientServiceJni: classInitNative succeeds ```
+* difs after entering offstate in my-logs/log2.txt and firer-logs/log2.txt
+```
+...firer-logs/...
+05-29 19:22:43.865 24812 24854 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+05-29 19:22:43.868 24812 24850 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+begging of crash...
+```
+...my-logs/...
+***04-01 16:59:09.335  5305  5343 I bt_btm_sec: btm_sec_disconnected clearing pending flag handle:1 reason:19
+04-01 16:59:09.335  5305  5326 W bt_btif : btif_av_move_idle: ACL Disconnected state 0 bd_addr=a0:a4:c5:68:0f:dc peer_bda=00:00:00:00:00:00
+04-01 16:59:09.343  5305  5305 D BluetoothMapService: onReceive
+04-01 16:59:09.343  5305  5305 D BluetoothMapService: onReceive: android.bluetooth.device.action.ACL_DISCONNECTED
+04-01 16:59:09.344  5305  5305 D BluetoothPbapService: action: android.bluetooth.device.action.ACL_DISCONNECTED
+04-01 16:59:09.344  5305  5305 D BluetoothPbapService: state: -2147483648
+04-01 16:59:09.344  5305  5305 W BluetoothPbapService: Unrecognized intent!
+```
+* difs in crash errors: SEGABRT (test of allocation track is failed) on my device and SIGSEGV on firer's device
+
+Seems like the last note is the most important. Suggest that only crash forced by allocation tracker isn't allowing further interactions with device.
+
+
