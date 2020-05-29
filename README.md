@@ -115,6 +115,7 @@ Finaly conducted tests with a help of @javaprog, who sent me 5 hci log files. Th
 05-29 19:22:43.868 24812 24850 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
 begging of crash...
 ```
+```
 ...my-logs/...
 ***04-01 16:59:09.335  5305  5343 I bt_btm_sec: btm_sec_disconnected clearing pending flag handle:1 reason:19
 04-01 16:59:09.335  5305  5326 W bt_btif : btif_av_move_idle: ACL Disconnected state 0 bd_addr=a0:a4:c5:68:0f:dc peer_bda=00:00:00:00:00:00
@@ -127,5 +128,3 @@ begging of crash...
 * difs in crash errors: SEGABRT (test of allocation track is failed) on my device and SIGSEGV on firer's device
 
 Seems like the last note is the most important. Suggest that only crash forced by allocation tracker isn't allowing further interactions with device.
-
-
