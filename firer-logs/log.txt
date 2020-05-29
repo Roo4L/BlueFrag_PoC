@@ -1,0 +1,115 @@
+--------- beginning of main
+05-29 19:15:13.566 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:13.566 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:19.588 26855 19275 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:15:25.619 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:25.620 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:31.676 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:31.677 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:37.729 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:37.730 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:43.599 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:43.599 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:49.650 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:49.651 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:15:55.701 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:15:55.702 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:01.753 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:01.754 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:07.806 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:07.806 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:13.649 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:13.650 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:19.704 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:19.705 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:25.757 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:25.758 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:31.812 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:31.812 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:37.860 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:37.861 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:43.676 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:43.677 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:49.725 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:49.726 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:16:55.777 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:16:55.778 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:01.829 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:01.830 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:07.873 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:07.874 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:13.705 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:13.705 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:19.754 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:19.754 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:25.802 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:25.803 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:31.842 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:31.842 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:31.851 26855 26888 E BtGatt.ScanManager: Cannot start unfiltered scan in screen-off. This scan will be resumed later: 7
+05-29 19:17:37.875 26855 19275 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:17:43.717 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:43.717 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:43.726 26855 26888 E BtGatt.ScanManager: Cannot start unfiltered scan in screen-off. This scan will be resumed later: 7
+05-29 19:17:49.745 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:49.745 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:49.754 26855 26888 E BtGatt.ScanManager: Cannot start unfiltered scan in screen-off. This scan will be resumed later: 7
+05-29 19:17:52.325 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:52.325 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=8
+05-29 19:17:55.792 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:55.792 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:17:58.386 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:17:58.386 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=8
+05-29 19:18:00.865 26855 19275 V BluetoothMapService: getConnectedDevices()
+05-29 19:18:01.834 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:01.835 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:07.887 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:07.887 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:13.763 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:13.763 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:19.812 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:19.812 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:25.862 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:25.863 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:31.914 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:31.915 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:37.970 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:37.970 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:38.765 26855 26865 I zygote  : Background concurrent copying GC freed 23361(1423KB) AllocSpace objects, 0(0B) LOS objects, 51% free, 1454KB/2MB, paused 441us total 101.874ms
+05-29 19:18:43.798 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:43.798 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:49.851 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:49.851 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:18:55.885 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:18:55.885 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:19:01.924 26855 26926 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:19:07.955 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:19:07.956 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:19:13.830 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:19:13.830 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:19:19.880 26855 26896 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:19:19.881 26855 26896 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=7
+05-29 19:19:24.162 26855 26896 W bt_btif : bta_dm_acl_change info: 0x10
+05-29 19:19:24.162 26855 26881 D bt_btif_dm: remote version info [b8:27:eb:72:c9:8d]: 0, 0, 0
+05-29 19:19:24.166 26855 26881 E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=B8:27:EB:72:C9:8D, newState=0
+05-29 19:19:24.623 26855 26881 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:19:24.623 26855 26881 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:19:24.630 26855 26881 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 1
+05-29 19:19:24.631 26855 26881 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:19:24.634 26855 26886 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 10 NewState: 11
+05-29 19:19:24.641 26855 26886 I BluetoothBondStateMachine: Entering PendingCommandState State
+05-29 19:19:24.775 26855 26881 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:19:24.775 26855 26881 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:19:24.776 26855 26881 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 0
+05-29 19:19:24.776 26855 26886 D BluetoothAdapterProperties: Failed to remove device: B8:27:EB:72:C9:8D
+05-29 19:19:24.779 26855 26886 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 11 NewState: 10
+05-29 19:19:24.821 26855 26886 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@fee62ce
+05-29 19:19:24.835 26855 26886 I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+05-29 19:19:24.835 26855 26886 D A2dpSinkService: getA2dpSinkService(): service is NULL
+05-29 19:19:24.840 26855 26886 D HidService: Saved priority B8:27:EB:72:C9:8D = -1
+05-29 19:19:24.844 26855 26886 I BluetoothBondStateMachine: StableState(): Entering Off State
+05-29 19:19:24.940 26855 26896 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+05-29 19:19:24.942 26855 26892 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+--------- beginning of crash
+05-29 19:19:24.944 26855 26892 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0xe4380000 in tid 26892 (HwBinder:26855_), pid 26855 (droid.bluetooth)
+05-29 19:19:25.143 26855 26892 I libc    : orig_dumpable: 0

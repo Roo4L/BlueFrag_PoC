@@ -1,0 +1,123 @@
+--------- beginning of main
+05-29 19:28:58.827 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:28:58.828 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:28:58.969 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:28:58.969 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:05.011 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:29:11.046 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:11.046 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:15.580 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:15.580 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:16.792 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:16.792 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:22.829 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:29:28.858 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:28.859 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:29.010 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:29.010 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:35.052 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:29:41.083 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:41.083 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:45.604 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:45.605 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:46.817 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:46.817 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:52.865 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:29:58.897 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:58.897 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:29:59.034 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:29:59.035 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:05.091 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:30:11.124 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:11.125 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:15.635 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:15.635 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:16.843 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:16.843 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:22.890 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:30:28.920 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:28.920 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:29.062 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:29.062 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:35.107 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:30:41.139 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:41.140 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:45.671 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:45.671 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:46.876 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:46.876 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:52.925 25247 25296 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:30:58.954 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:58.954 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:30:59.088 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:30:59.088 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:31:05.131 25247 25260 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:31:11.163 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:31:11.163 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:31:15.704 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:31:15.704 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:31:16.903 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:31:16.904 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:31:18.815 25247 25247 I SurfaceFactory: [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@4e2a7e2
+05-29 19:31:18.820 25247 25247 D WindowClient: Add to mViews: DecorView@7e8d2a9[BluetoothOppTransferHistory], this = android.view.WindowManagerGlobal@607602e
+05-29 19:31:18.821 25247 25247 D OpenGLRenderer: Dumper init 4 threads <0xcc1f7200>
+05-29 19:31:18.821 25247 25247 D OpenGLRenderer: <com.android.bluetooth> is running.
+05-29 19:31:18.832 25247 26712 D OpenGLRenderer: HWUI GL Pipeline
+05-29 19:31:18.836 25247 25247 D ViewRootImpl[BluetoothOppTransferHistory]: hardware acceleration = true , fakeHwAccelerated = false, sRendererDisabled = false, forceHwAccelerated = false, sSystemRendererDisabled = false
+05-29 19:31:18.841 25247 25247 V PhoneWindow: DecorView setVisiblity: visibility = 0, Parent = ViewRoot{20627cf com.android.bluetooth/com.android.bluetooth.opp.BluetoothOppTransferHistory,ident = 0}, this = DecorView@7e8d2a9[BluetoothOppTransferHistory]
+05-29 19:31:18.888 25247 25247 D Surface : Surface::allocateBuffers(this=0xcc1ac000)
+05-29 19:31:18.907 25247 26712 I zygote  : android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+05-29 19:31:18.908 25247 26712 I OpenGLRenderer: Initialized EGL, version 1.4
+05-29 19:31:18.908 25247 26712 D OpenGLRenderer: Swap behavior 2
+05-29 19:31:18.926 25247 26712 D OpenGLRenderer: [init] completed
+05-29 19:31:18.926 25247 26712 D HWUIExtension: MTKProgramCache.init: enable enhancement 1
+05-29 19:31:18.927 25247 26712 I HWUIExtension: Get disable program binary service property (0)
+05-29 19:31:18.927 25247 26712 I HWUIExtension: Initializing program atlas...
+05-29 19:31:18.928 25247 26712 W HWUIExtension: Program binary service not published, failed to get program binary.
+05-29 19:31:18.929 25247 26712 D HWUIExtension: Dumper init 4 threads <0xcdbff7e0>
+05-29 19:31:18.929 25247 26712 D HWUIExtension: <com.android.bluetooth> is running.
+05-29 19:31:18.929 25247 26712 D HWUIExtension: Initializing program cache from 0x0, size = -1
+05-29 19:31:18.929 25247 26712 D Surface : Surface::connect(this=0xcc1ac000,api=1)
+05-29 19:31:18.931 25247 26712 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+05-29 19:31:18.941 25247 26712 D vndksupport: Loading /vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+05-29 19:31:18.946 25247 26712 D vndksupport: Loading /vendor/lib/hw/gralloc.mt6763.so from current namespace instead of sphal namespace.
+05-29 19:31:18.952 25247 26712 D vndksupport: Loading /vendor/lib/hw/gralloc.mt6763.so from current namespace instead of sphal namespace.
+05-29 19:31:18.949 25247 25247 W RenderThread: type=1400 audit(0.0:4270859): avc: denied { search } for name="clients" dev="debugfs" ino=6896 scontext=u:r:bluetooth:s0 tcontext=u:object_r:debugfs_ion:s0 tclass=dir permissive=0
+05-29 19:31:18.963 25247 26712 E OpenGLRenderer: glTexSubImage2D, target:3553, level:0, xoffset:0, yoffset:0, width:160, height:388, format:6406, type:5121, pixels:0x0
+05-29 19:31:18.963 25247 26712 I chatty  : uid=1002(bluetooth) RenderThread identical 1 line
+05-29 19:31:18.963 25247 26712 E OpenGLRenderer: glTexSubImage2D, target:3553, level:0, xoffset:0, yoffset:0, width:160, height:388, format:6406, type:5121, pixels:0x0
+05-29 19:31:18.963 25247 26712 D HWUIExtension: MTKProgramCache.generateProgram: 0
+05-29 19:31:19.154 25247 26712 D HWUIExtension: MTKProgramCache.generateProgram: 562984313159683
+05-29 19:31:19.182 25247 26712 D HWUIExtension: MTKProgramCache.generateProgram: 240518168576
+05-29 19:31:19.208 25247 26712 D HWUIExtension: MTKProgramCache.generateProgram: 34359738368
+05-29 19:31:20.965 25247 26712 D Surface : Surface::disconnect(this=0xcc1ac000,api=1)
+05-29 19:31:21.735 25247 25247 D View    : [Warning] assignParent to null: this = DecorView@7e8d2a9[BluetoothOppTransferHistory]
+05-29 19:31:21.751 25247 25247 D WindowClient: Remove from mViews: DecorView@7e8d2a9[BluetoothOppTransferHistory], this = android.view.WindowManagerGlobal@607602e
+05-29 19:31:22.951 25247 25260 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:31:28.972 25247 25292 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:31:28.972 25247 25292 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:31:29.089 25247 25260 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:31:33.138 25247 25292 W bt_btif : bta_dm_acl_change info: 0x10
+05-29 19:31:33.139 25247 25277 D bt_btif_dm: remote version info [b8:27:eb:72:c9:8d]: 0, 0, 0
+05-29 19:31:33.141 25247 25277 E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=B8:27:EB:72:C9:8D, newState=0
+05-29 19:31:33.583 25247 25277 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:31:33.584 25247 25277 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:31:33.585 25247 25277 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 1
+05-29 19:31:33.586 25247 25277 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:31:33.591 25247 25282 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 10 NewState: 11
+05-29 19:31:33.592 25247 25282 I BluetoothBondStateMachine: Entering PendingCommandState State
+05-29 19:31:33.664 25247 25277 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:31:33.665 25247 25277 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:31:33.665 25247 25277 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 0
+05-29 19:31:33.666 25247 25282 D BluetoothAdapterProperties: Failed to remove device: B8:27:EB:72:C9:8D
+05-29 19:31:33.669 25247 25282 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 11 NewState: 10
+05-29 19:31:33.678 25247 25282 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@fee62ce
+05-29 19:31:33.678 25247 25282 I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+05-29 19:31:33.679 25247 25282 D A2dpSinkService: getA2dpSinkService(): service is NULL
+05-29 19:31:33.682 25247 25282 D HidService: Saved priority B8:27:EB:72:C9:8D = -1
+05-29 19:31:33.698 25247 25282 I BluetoothBondStateMachine: StableState(): Entering Off State
+05-29 19:31:33.737 25247 25292 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+05-29 19:31:33.740 25247 25288 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+--------- beginning of crash
+05-29 19:31:33.740 25247 25288 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0xe1700000 in tid 25288 (HwBinder:25247_), pid 25247 (droid.bluetooth)
+05-29 19:31:33.872 25247 25288 I libc    : orig_dumpable: 0

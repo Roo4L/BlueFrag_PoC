@@ -1,0 +1,173 @@
+--------- beginning of main
+05-29 19:33:37.770 27402 27445 I bt_stack: [INFO:port_api.cc(129)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+05-29 19:33:37.770 27402 27402 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+05-29 19:33:37.771 27402 27458 D ObexServerSockets: Succeed to create listening sockets 
+05-29 19:33:37.772 27402 27451 V BluetoothMapService: getConnectionState()
+05-29 19:33:37.772 27402 27402 D ObexServerSockets: Succeed to create listening sockets 
+05-29 19:33:37.772 27402 27402 D ObexServerSockets1: startAccept()
+05-29 19:33:37.772 27402 27458 D ObexServerSockets0: startAccept()
+05-29 19:33:37.772 27402 27458 D ObexServerSockets0: prepareForNewConnect()
+05-29 19:33:37.772 27402 27402 D ObexServerSockets1: prepareForNewConnect()
+05-29 19:33:37.773 27402 27465 D ObexServerSockets1: Accepting socket connection...
+05-29 19:33:37.774 27402 27402 D BluetoothSdpJni: sdpCreateOppOpsRecordNative
+05-29 19:33:37.774 27402 27402 D BluetoothSdpJni: SDP Create record success - handle: 0
+05-29 19:33:37.774 27402 27402 D BtOppService: mOppSdpHandle :0
+05-29 19:33:37.774 27402 27458 D BluetoothSdpJni: sdpCreateMapMasRecordNative
+05-29 19:33:37.774 27402 27458 D BluetoothSdpJni: SDP Create record success - handle: 1
+05-29 19:33:37.775 27402 27402 D BluetoothPbapService: startsocketListener
+05-29 19:33:37.775 27402 27402 D ObexServerSockets: createWithFixedChannels(rfcomm = 19, l2capPsm = 4133)
+05-29 19:33:37.775 27402 27402 D ObexServerSockets: create(rfcomm = 19, l2capPsm = 4133)
+05-29 19:33:37.775 27402 27458 D BluetoothMapMasInstance0: Creating new SDP record for MAS instance: 0 Object reference: MasId: 0 Uri:null SMS/MMS:trueSDP handle: 1
+05-29 19:33:37.775 27402 27437 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@f75d1c5
+05-29 19:33:37.775 27402 27402 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+05-29 19:33:37.776 27402 27468 D ObexServerSockets0: Accepting socket connection...
+05-29 19:33:37.777 27402 27467 D ObexServerSockets0: Accepting socket connection...
+05-29 19:33:37.777 27402 27466 D ObexServerSockets1: Accepting socket connection...
+05-29 19:33:37.779 27402 27445 I bt_stack: [INFO:port_api.cc(129)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+05-29 19:33:37.779 27402 27402 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+05-29 19:33:37.780 27402 27413 V BluetoothMapService: getConnectedDevices()
+05-29 19:33:37.782 27402 27402 D ObexServerSockets: Succeed to create listening sockets 
+05-29 19:33:37.782 27402 27402 D ObexServerSockets2: startAccept()
+05-29 19:33:37.782 27402 27402 D ObexServerSockets2: prepareForNewConnect()
+05-29 19:33:37.783 27402 27402 D BluetoothSdpJni: sdpCreatePbapPseRecordNative
+05-29 19:33:37.783 27402 27402 D BluetoothSdpJni: SDP Create record success - handle: 2
+05-29 19:33:37.784 27402 27413 V BluetoothMapService: getConnectionState()
+05-29 19:33:37.784 27402 27469 D ObexServerSockets2: Accepting socket connection...
+05-29 19:33:37.785 27402 27470 D ObexServerSockets2: Accepting socket connection...
+05-29 19:33:37.788 27402 27402 D BluetoothPbapService: PBAP server with handle:2
+05-29 19:33:37.790 27402 27402 D A2dpStateMachine: Connection state 1C:52:16:D6:5D:54: 0->1
+05-29 19:33:37.801 27402 27413 V BluetoothMapService: getConnectedDevices()
+05-29 19:33:37.804 27402 27413 V BluetoothMapService: getConnectionState()
+05-29 19:33:37.821 27402 27402 D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=1, device=1C:52:16:D6:5D:54, 0 -> 1
+05-29 19:33:37.821 27402 27402 D BluetoothAdapterProperties: ADAPTER_CONNECTION_STATE_CHANGE: 1C:52:16:D6:5D:54: 0 -> 1
+05-29 19:33:37.825 27402 27402 D BluetoothPhonePolicy: processProfileStateChanged, device=1C:52:16:D6:5D:54, profile=1, 0 -> 1
+05-29 19:33:37.825 27402 27402 D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=2, device=1C:52:16:D6:5D:54, 0 -> 1
+05-29 19:33:37.826 27402 27402 D BluetoothPhonePolicy: processProfileStateChanged, device=1C:52:16:D6:5D:54, profile=2, 0 -> 1
+05-29 19:33:37.829 27402 27430 D BluetoothAdapterProperties: Discoverable Timeout:300
+05-29 19:33:37.830 27402 27430 D BluetoothAdapterProperties: Scan Mode:23
+05-29 19:33:38.156 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:38.156 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:33:38.670 27402 27573 D BluetoothOppNotification: Completed counter = 0
+05-29 19:33:40.027 27402 27402 I chenxingsm: mapLteSignalLevel - rsrp:-109 snr:80 rsrpIconLevel:3 snrIconLevel:-1
+05-29 19:33:43.788 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:43.788 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:33:44.210 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:44.210 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+05-29 19:33:44.454 27402 27445 W bt_sdp  : SDP - Rcvd conn cnf with error: 0x4  CID 0x40
+05-29 19:33:44.455 27402 27445 I bt_stack: [INFO:port_api.cc(129)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+05-29 19:33:44.456 27402 27445 I bt_stack: [INFO:port_api.cc(129)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+05-29 19:33:44.456 27402 27430 I BluetoothHeadsetServiceJni: connection_state_callback
+05-29 19:33:44.458 27402 27430 I bt_btif_queue: queue_int_advance: removing connection request UUID=111F, bd_addr=1c:52:16:d6:5d:54, busy=1
+05-29 19:33:44.458 27402 27430 I bt_btif_queue: btif_queue_connect_next: executing connection request UUID=110A, bd_addr=1c:52:16:d6:5d:54, busy=0
+05-29 19:33:44.458 27402 27430 I BluetoothA2dpServiceJni: bta2dp_connection_state_callback
+05-29 19:33:44.458 27402 27450 D HeadsetStateMachine: Pending: processConnectionEvent, state=0, device=1C:52:16:D6:5D:54
+05-29 19:33:44.458 27402 27445 E bt_btif : bta_av_save_addr: reset flags
+05-29 19:33:44.460 27402 27453 D A2dpStateMachine: Pending process message: 101
+05-29 19:33:44.461 27402 27453 D A2dpStateMachine: Stack and target device are connecting
+05-29 19:33:44.463 27402 27450 D HeadsetStateMachine: Pending: removed CONNECT_TIMEOUT for device=1C:52:16:D6:5D:54
+05-29 19:33:44.472 27402 27402 D BluetoothPhonePolicy: processProfileStateChanged, device=1C:52:16:D6:5D:54, profile=1, 1 -> 0
+05-29 19:33:44.473 27402 27402 D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=1, device=1C:52:16:D6:5D:54, 1 -> 0
+05-29 19:33:45.859 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:45.859 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:33:47.048 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:47.048 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:33:51.149 27402 27445 W bt_sdp  : SDP - Rcvd conn cnf with error: 0x4  CID 0x41
+05-29 19:33:51.150 27402 27445 E bt_btif : bta_av_sdp_failed: peer_addr=1c:52:16:d6:5d:54 open_status=0
+05-29 19:33:51.150 27402 27445 W bt_btif : bta_av_str_closed: peer_addr=1c:52:16:d6:5d:54 open_status=2 chnl=64 hndl=65 co_started=0
+05-29 19:33:51.150 27402 27445 W bt_btif : bta_dm_rm_cback:0, status:1
+05-29 19:33:51.150 27402 27445 W bt_btif : bta_dm_act no entry for connected service cbs
+05-29 19:33:51.151 27402 27430 W bt_btif : btif_av_state_opening_handler: BTA_AV_OPEN_EVT status=2, edr=0x30
+05-29 19:33:51.151 27402 27430 W bt_btif : btif_av_state_opening_handler: BTA_AV_OPEN_EVT::FAILED status: 2
+05-29 19:33:51.151 27402 27430 E bt_btif : get_connected_device: returning NULL
+05-29 19:33:51.151 27402 27430 I BluetoothA2dpServiceJni: bta2dp_connection_state_callback
+05-29 19:33:51.152 27402 27430 D a2dp_codec: init
+05-29 19:33:51.153 27402 27453 D A2dpStateMachine: Pending process message: 101
+05-29 19:33:51.153 27402 27430 D a2dp_codec: createCodec: codec SBC
+05-29 19:33:51.153 27402 27453 D AudioManager: setBluetoothA2dpDeviceConnectionState: state = 0
+05-29 19:33:51.153 27402 27430 I a2dp_codec: init: updated SBC codec priority to 1001
+05-29 19:33:51.153 27402 27430 D a2dp_codec: createCodec: codec AAC
+05-29 19:33:51.153 27402 27430 I a2dp_codec: init: updated AAC codec priority to 2001
+05-29 19:33:51.153 27402 27430 D a2dp_codec: createCodec: codec aptX
+05-29 19:33:51.155 27402 27430 E a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: dlopen failed: library "libaptX_encoder.so" not found
+05-29 19:33:51.155 27402 27430 E a2dp_vendor_aptx: init: cannot load the encoder
+05-29 19:33:51.155 27402 27430 D a2dp_codec: createCodec: codec aptX-HD
+05-29 19:33:51.157 27402 27430 E a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: dlopen failed: library "libaptXHD_encoder.so" not found
+05-29 19:33:51.158 27402 27430 E a2dp_vendor_aptx_hd: init: cannot load the encoder
+05-29 19:33:51.158 27402 27430 D a2dp_codec: createCodec: codec LDAC
+05-29 19:33:51.158 27402 27430 I a2dp_codec: init: updated LDAC codec priority to 5001
+05-29 19:33:51.158 27402 27430 D a2dp_codec: createCodec: codec SBC SINK
+05-29 19:33:51.158 27402 27430 I a2dp_codec: init: initialized Source codec LDAC
+05-29 19:33:51.158 27402 27430 I a2dp_codec: init: initialized Source codec AAC
+05-29 19:33:51.158 27402 27430 I a2dp_codec: init: initialized Source codec SBC
+05-29 19:33:51.158 27402 27430 I a2dp_codec: init: initialized Sink codec SBC(Sink)
+05-29 19:33:51.158 27402 27430 W bt_btif : ## ON A2DP IDLE ## peer_sep = 0
+05-29 19:33:51.159 27402 27430 I bt_btif_queue: queue_int_advance: removing connection request UUID=110A, bd_addr=1c:52:16:d6:5d:54, busy=1
+05-29 19:33:51.159 27402 27430 I BluetoothA2dpServiceJni: bta2dp_audio_config_callback
+05-29 19:33:51.161 27402 27430 D A2dpStateMachine: A2DP Codec Config: {codecName:SBC,mCodecType:0,mCodecPriority:0,mSampleRate:0x0(NONE),mBitsPerSample:0x0(NONE),mChannelMode:0x0(NONE),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}->{codecName:SBC,mCodecType:0,mCodecPriority:0,mSampleRate:0x0(NONE),mBitsPerSample:0x0(NONE),mChannelMode:0x0(NONE),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+05-29 19:33:51.162 27402 27430 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:LDAC,mCodecType:4,mCodecPriority:5001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+05-29 19:33:51.162 27402 27430 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+05-29 19:33:51.163 27402 27430 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+05-29 19:33:51.165 27402 27453 D A2dpStateMachine: Enter Disconnected: 101
+05-29 19:33:51.168 27402 27402 D A2dpStateMachine: Connection state 1C:52:16:D6:5D:54: 1->0
+05-29 19:33:51.171 27402 27402 D BluetoothPhonePolicy: processProfileStateChanged, device=1C:52:16:D6:5D:54, profile=2, 1 -> 0
+05-29 19:33:51.172 27402 27402 D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=2, device=1C:52:16:D6:5D:54, 1 -> 0
+05-29 19:33:51.173 27402 27402 D BluetoothAdapterProperties: ADAPTER_CONNECTION_STATE_CHANGE: 1C:52:16:D6:5D:54: 1 -> 0
+05-29 19:33:53.095 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:33:53.096 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:33:59.144 27402 27415 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:33:59.204 27402 27415 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:05.238 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:07.794 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:07.794 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:13.841 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:13.842 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:15.859 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:17.054 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:17.054 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:23.095 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:23.095 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:29.143 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:29.144 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:29.224 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:35.255 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:37.823 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:37.823 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:43.874 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:43.874 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:45.901 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:34:47.091 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:47.092 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:53.140 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:53.140 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:59.192 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:34:59.193 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:34:59.250 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:35:05.280 27402 27449 E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+05-29 19:35:07.851 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:35:07.852 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:35:13.900 27402 27445 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+05-29 19:35:13.900 27402 27445 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+05-29 19:35:14.035 27402 27445 W bt_btif : bta_dm_acl_change info: 0x10
+05-29 19:35:14.035 27402 27430 D bt_btif_dm: remote version info [b8:27:eb:72:c9:8d]: 0, 0, 0
+05-29 19:35:14.038 27402 27430 E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=B8:27:EB:72:C9:8D, newState=0
+05-29 19:35:14.473 27402 27430 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:35:14.473 27402 27430 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:35:14.475 27402 27430 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 1
+05-29 19:35:14.475 27402 27430 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:35:14.481 27402 27435 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 10 NewState: 11
+05-29 19:35:14.487 27402 27435 I BluetoothBondStateMachine: Entering PendingCommandState State
+05-29 19:35:14.593 27402 27430 D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+05-29 19:35:14.593 27402 27430 I bt_btif_dm: get_cod remote_cod = 0x00480000
+05-29 19:35:14.594 27402 27430 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 0
+05-29 19:35:14.594 27402 27435 D BluetoothAdapterProperties: Failed to remove device: B8:27:EB:72:C9:8D
+05-29 19:35:14.597 27402 27435 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 11 NewState: 10
+05-29 19:35:14.601 27402 27435 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@3ef05ef
+05-29 19:35:14.601 27402 27435 I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+05-29 19:35:14.602 27402 27435 D A2dpSinkService: getA2dpSinkService(): service is NULL
+05-29 19:35:14.604 27402 27435 D HidService: Saved priority B8:27:EB:72:C9:8D = -1
+05-29 19:35:14.623 27402 27435 I BluetoothBondStateMachine: StableState(): Entering Off State
+05-29 19:35:14.683 27402 27445 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+05-29 19:35:14.685 27402 27441 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+--------- beginning of crash
+05-29 19:35:14.687 27402 27441 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0xe4380000 in tid 27441 (HwBinder:27402_), pid 27402 (droid.bluetooth)
+05-29 19:35:14.789 27402 27441 I libc    : orig_dumpable: 0
