@@ -80,3 +80,26 @@ Figured problem above. 2 steps were done. First, root was reinstalled after chan
 ### 01.04.20
 
 Successfully set connection between IDA PRO win version and rooted android device on custom OS. Face several troubles during establishing this connection. Most of steps were made using [following guide](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/debugging-android-libraries-using-ida/). 1) Adb had no rights to remount android device. Solved routing device with Magisk. Be careful: root modifes bootloader, so device should be rooted after changing boot.img. 2) Adb couldn't execute android_server on device. There were guilty several facts. The main, IDA version was to old and guide, which was followed was written 7 years ago. So, some of changes were made. 3)Android server and device bitness were different. Be careful and check bitness of debugged system.
+
+### 25.05.20
+
+Got stuck with indefined behavior of bluetooth device after first leak. HID saves priority for device from which leaked was managed and bans further interactinos of target with host device.
+```
+05-25 16:52:31.293  2862  3260 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+```
+Tried to look for the information about HID Service managment realization, but didn't discovered anything useful. Can't identify what priority "-1" actually means. Looked up this resources:
+* [Stack OverFlow issue](https://stackoverflow.com/questions/10444063/android-bluetooth-hid-implementation)
+* [Bluetooth Specification](https://drive.google.com/open?id=1SzzxdNAe_wPpbr3LoCnzPpN_mdP-zgWG)
+
+### 26.05.20
+
+Couldn't guess whether the problem in Anroid Oreo or in DotOS. Trying to conduct tests on virtual machine using Androidx86, but couldn't estabslish debug bridge between virtual device and PC.
+
+### 27.05.20 - 28.05.20
+Guide list:
+* [install android_x86 on VM](https://www.howtogeek.com/164570/how-to-install-android-in-virtualbox/)
+* [common issues on android_x86 VM](https://www.android-x86.org/documentation/virtualbox.html)
+* [THE ONLY ONE TRUE WAY HOW TO SETUP VM FOR ANDROIDx86](https://www.youtube.com/watch?v=Pet4LZnZhDU) and [Answer from stackoverflow](https://stackoverflow.com/questions/18223402/how-to-start-gui-from-command-line-in-android-x86)
+* Also it would be nice to add VM in list of apps using GPU
+* If you want to start VM in debug mode: ``` C:\Program Files\Oracle\VirtualBox>vboxmanage startvm "SomeVM" -E VBOX_GUI_DBG_AUTO_SHOW=true -E VBOX_GUI_DBG_ENABLED=true ``` 
+
