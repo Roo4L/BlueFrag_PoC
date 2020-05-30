@@ -128,4 +128,5 @@ begging of crash...
 
 Seems like the last note is the most important. Suggest that only crash forced by allocation tracker isn't allowing further interactions with device.
 
-
+### 30.05.20
+Infestigated funciton btm_sec_disconnected. Reason 19 - HCI_ERR_PEER_USER. Trying to reconstruct the raw of called functions which caused this error.

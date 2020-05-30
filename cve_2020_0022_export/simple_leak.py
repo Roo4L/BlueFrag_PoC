@@ -66,6 +66,7 @@ while True:
     time.sleep(0.1)
 
     i = (i+1) % 250
+    print "INQ: %d", i
 
 raw_input("Done")
 
