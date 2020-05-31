@@ -138,7 +138,7 @@ Infestigated funciton btm_sec_disconnected. Reason 19 - HCI_ERR_PEER_USER. Tryin
 Occaisonally conducted test, where process ended with SIGSEGV, but connection after this again failed. Now it's clear that different error handling doesn't affect connection process.
 
 Collected all diffs between logs in one file. Suggest that problem may be in strange behavior of Bluetooth Bond State Machine. Looking through [BondStateMachine source file](https://android.googlesource.com/platform/packages/apps/Bluetooth/+/refs/heads/oreo-r3-release/src/com/android/bluetooth/btservice/BondStateMachine.java). Important notes:
-*Bond state codes:
+* Bond state codes:
 	* BOND_STATE_NONE = 0;
     	* BOND_STATE_BONDING = 1;
     	* BOND_STATE_BONDED = 2;
