@@ -1,0 +1,91 @@
+----FAILED CONNECTION ON MY_DEVICE----
+04-02 15:44:48.478 11388 11425 W bt_btif : bta_dm_acl_change info: 0x10
+04-02 15:44:48.478 11388 11409 D bt_btif_dm: remote version info [a0:a4:c5:68:0f:dc]: 8, 2, 100
+...
+04-02 15:44:49.789 11388 11415 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 11 NewState: 10
+04-02 15:44:49.792 11388 11415 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@9ecfed3
+04-02 15:44:49.792 11388 11415 D A2dpSinkService: getA2dpSinkService(): service is NULL
+04-02 15:44:49.796 11388 11415 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+04-02 15:44:49.803 11388 11415 I BluetoothBondStateMachine: StableState(): Entering Off State
+04-02 15:45:33.252 11388 11425 I bt_btm_sec: btm_sec_disconnected clearing pending flag handle:1 reason:19
+04-02 15:45:33.252 11388 11409 W bt_btif : btif_av_move_idle: ACL Disconnected state 0 bd_addr=a0:a4:c5:68:0f:dc peer_bda=00:00:00:00:00:00
+04-02 15:45:33.260 11388 11388 D BluetoothMapService: onReceive
+04-02 15:45:33.260 11388 11388 D BluetoothMapService: onReceive: android.bluetooth.device.action.ACL_DISCONNECTED
+04-02 15:45:33.261 11388 11388 D BluetoothPbapService: action: android.bluetooth.device.action.ACL_DISCONNECTED
+04-02 15:45:33.262 11388 11388 D BluetoothPbapService: state: -2147483648
+04-02 15:45:33.262 11388 11388 W BluetoothPbapService: Unrecognized intent!
+
+----SUCCESSFUL CONNECTION ON MY_DEVICE----
+04-01 16:56:41.457  2809  3284 W bt_btif : bta_dm_acl_change info: 0x10
+04-01 16:56:41.457  2809  2949 D bt_btif_dm: remote version info [a0:a4:c5:68:0f:dc]: 0, 0, 0
+...
+04-01 16:56:42.628  2809  3239 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 11 NewState: 10
+04-01 16:56:42.629  2809  3284 W bt_smp  : for SMP over BR max_key_size: 0x10, local_i_key: 0x07, local_r_key: 0x07, p_cb->loc_auth_req: 0x21
+04-01 16:56:42.630  2809  3284 W bt_smp  : AES128_CMAC started, allocate buffer size = 16
+04-01 16:56:42.630  2809  3284 W bt_smp  : flag = 1 round = 1
+04-01 16:56:42.630  2809  3284 W bt_smp  : AES128_CMAC started, allocate buffer size = 16
+04-01 16:56:42.630  2809  3284 W bt_smp  : flag = 0 round = 1
+04-01 16:56:42.630  2809  3284 W bt_smp  : smp_send_id_info
+04-01 16:56:42.631  2809  2949 D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+04-01 16:56:42.631  2809  2949 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-01 16:56:42.632  2809  3284 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+04-01 16:56:42.633  2809  3247 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+04-01 16:56:42.634  2809  3284 F bt_stack: [FATAL:allocation_tracker.cc(161)] Check failed: end_canary[i] == canary[i]. 
+--------- beginning of crash
+04-01 16:56:42.635  2809  3284 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 3284 (btu message loo), pid 2809 (droid.bluetooth)
+04-01 16:56:42.636  2809  2949 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 1
+04-01 16:56:42.662  2809  3239 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@9ecfed3
+04-01 16:56:42.669  2809  3239 D A2dpSinkService: getA2dpSinkService(): service is NULL
+04-01 16:56:42.674  2809  3239 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+04-01 16:56:42.682  2809  3239 I BluetoothBondStateMachine: StableState(): Entering Off State
+04-01 16:56:42.686  2809  3239 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 10 NewState: 11
+04-01 16:56:42.687  2809  3239 I BluetoothBondStateMachine: Entering PendingCommandState State
+
+----CONNECTION ON FIRER_DEVICE----
+05-29 19:31:33.138 25247 25292 W bt_btif : bta_dm_acl_change info: 0x10
+05-29 19:31:33.139 25247 25277 D bt_btif_dm: remote version info [b8:27:eb:72:c9:8d]: 0, 0, 0
+...
+05-29 19:31:33.669 25247 25282 I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 11 NewState: 10
+05-29 19:31:33.678 25247 25282 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@fee62ce
+-
+05-29 19:31:33.679 25247 25282 D A2dpSinkService: getA2dpSinkService(): service is NULL
+05-29 19:31:33.682 25247 25282 D HidService: Saved priority B8:27:EB:72:C9:8D = -1
+05-29 19:31:33.698 25247 25282 I BluetoothBondStateMachine: StableState(): Entering Off State
+05-29 19:31:33.737 25247 25292 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+05-29 19:31:33.740 25247 25288 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+--------- beginning of crash
+05-29 19:31:33.740 25247 25288 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0xe1700000 in tid 25288 (HwBinder:25247_), 
+
+----FAILED CONNECTION ON MY_DEVICE WITH SIGSEGV----
+04-03 04:41:18.288 13073 13111 W bt_btif : bta_dm_acl_change info: 0x10
+04-03 04:41:18.289 13073 13094 D bt_btif_dm: remote version info [a0:a4:c5:68:0f:dc]: 0, 0, 0
+04-03 04:41:18.291 13073 13094 E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=A0:A4:C5:68:0F:DC, newState=0
+04-03 04:41:18.656 13073 13094 D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+04-03 04:41:18.656 13073 13094 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-03 04:41:18.657 13073 13094 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 1
+04-03 04:41:18.657 13073 13094 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-03 04:41:18.662 13073 13101 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 10 NewState: 11
+04-03 04:41:18.662 13073 13101 I BluetoothBondStateMachine: Entering PendingCommandState State
+04-03 04:41:19.470 13073 13094 D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+04-03 04:41:19.471 13073 13094 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-03 04:41:19.471 13073 13094 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 0
+04-03 04:41:19.473 13073 13101 D BluetoothAdapterProperties: Failed to remove device: A0:A4:C5:68:0F:DC
+04-03 04:41:19.476 13073 13101 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 11 NewState: 10
+04-03 04:41:19.482 13073 13101 D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@9ecfed3
+04-03 04:41:19.483 13073 13101 D A2dpSinkService: getA2dpSinkService(): service is NULL
+04-03 04:41:19.484 13073 13111 W bt_smp  : for SMP over BR max_key_size: 0x10, local_i_key: 0x07, local_r_key: 0x07, p_cb->loc_auth_req: 0x21
+04-03 04:41:19.485 13073 13111 W bt_smp  : AES128_CMAC started, allocate buffer size = 16
+04-03 04:41:19.485 13073 13111 W bt_smp  : flag = 1 round = 1
+04-03 04:41:19.485 13073 13111 W bt_smp  : AES128_CMAC started, allocate buffer size = 16
+04-03 04:41:19.485 13073 13111 W bt_smp  : flag = 0 round = 1
+04-03 04:41:19.486 13073 13111 W bt_smp  : smp_send_id_info
+04-03 04:41:19.486 13073 13111 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+04-03 04:41:19.487 13073 13094 D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+04-03 04:41:19.488 13073 13106 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+04-03 04:41:19.488 13073 13101 D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+04-03 04:41:19.488 13073 13094 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-03 04:41:19.488 13073 13111 F bt_stack: [FATAL:allocation_tracker.cc(161)] Check failed: end_canary[i] == canary[i]. 
+--------- beginning of crash
+04-03 04:41:19.490 13073 13101 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x41414141414149 in tid 13101 (BondStateMachin), pid 13073 (droid.bluetooth)
+04-03 04:41:19.489 13073 13094 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 1
+

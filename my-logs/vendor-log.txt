@@ -1,0 +1,78 @@
+--------- beginning of main
+04-02 12:47:50.167   459   459 I chatty  : uid=1002 bluetooth@1.0-s expire 12 lines
+04-02 12:47:50.242   459  7962 I chatty  : uid=1002 bluetooth@1.0-s expire 1 line
+04-02 12:47:50.669   459  5285 I chatty  : uid=1002(bluetooth) HwBinder:459_2 expire 17 lines
+04-02 12:47:50.671   459 10145 I chatty  : uid=1002 bluetooth@1.0-s expire 19 lines
+04-02 13:07:50.085   459   459 I chatty  : uid=1002 bluetooth@1.0-s expire 12 lines
+04-02 13:07:50.159   459 10146 I chatty  : uid=1002 bluetooth@1.0-s expire 1 line
+04-02 13:07:50.549   459  3246 I chatty  : uid=1002(bluetooth) HwBinder:459_1 expire 6 lines
+04-02 13:07:50.550   459 10554 I chatty  : uid=1002 bluetooth@1.0-s expire 19 lines
+04-02 13:08:01.338   459 10555 I chatty  : uid=1002 bluetooth@1.0-s expire 1 line
+04-02 13:08:01.874   459   459 I chatty  : uid=1002 bluetooth@1.0-s expire 6 lines
+04-02 13:08:01.875   459 10639 I chatty  : uid=1002 bluetooth@1.0-s expire 19 lines
+04-02 13:14:18.285   459  5285 I chatty  : uid=1002(bluetooth) HwBinder:459_2 expire 12 lines
+04-02 13:14:18.285   459 10640 I chatty  : uid=1002 bluetooth@1.0-s expire 11 lines
+04-02 13:14:18.820   459   459 I chatty  : uid=1002 bluetooth@1.0-s expire 6 lines
+04-02 13:14:18.823   459 10869 I chatty  : uid=1002 bluetooth@1.0-s expire 19 lines
+04-02 14:48:04.388   459   459 I chatty  : uid=1002 bluetooth@1.0-s expire 11 lines
+04-02 14:48:04.465   459 10871 I chatty  : uid=1002 bluetooth@1.0-s expire 1 line
+04-02 14:48:05.092   459  3246 I chatty  : uid=1002(bluetooth) HwBinder:459_1 expire 6 lines
+04-02 14:48:05.095   459 11171 I chatty  : uid=1002 bluetooth@1.0-s expire 15 lines
+04-02 14:48:05.209   459 11171 I vendor.qti.bluetooth@1.0-nvm_tags_manager: HciReset: HCI RESET Done
+04-02 14:48:05.210   459 11171 E vendor.qti.bluetooth@1.0-wake_lock: Release wake lock not initialized/acquired
+04-02 14:48:05.212   459 11171 D Diag_Lib: Init succeded
+04-02 14:48:05.212   459 11171 I vendor.qti.bluetooth@1.0-data_handler: Firmware download succeded
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback hciEventReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback hciEventReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback hciEventReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback hciEventReceived failed
+04-02 15:01:41.028   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.028   459 11172 I chatty  : uid=1002 bluetooth@1.0-s identical 2 lines
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.029   459 11172 I chatty  : uid=1002 bluetooth@1.0-s identical 3 lines
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.029   459 11172 I chatty  : uid=1002 bluetooth@1.0-s identical 2 lines
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.029   459 11172 E vendor.qti.bluetooth@1.0-bluetooth_hci: Client dead, callback aclDataReceived failed
+04-02 15:01:41.033   459  5285 E Diag_Lib: BluetoothDeathRecipient: Calling HAL close
+04-02 15:01:41.033   459  5285 W vendor.qti.bluetooth@1.0-bluetooth_hci: BluetoothHci::close()
+04-02 15:01:41.033   459  5285 I vendor.qti.bluetooth@1.0-data_handler: Sending HCI Reset 
+04-02 15:01:41.103   459 11172 W vendor.qti.bluetooth@1.0-data_handler: OnPacketReady: Received event for command sent internally: 03 0c 
+04-02 15:01:41.103   459  5285 W vendor.qti.bluetooth@1.0-data_handler: DataHandler::CleanUp()
+04-02 15:01:41.103   459  5285 D vendor.qti.bluetooth@1.0-data_handler: Close: Wait for collecting crash dump to finish
+04-02 15:01:41.103   459  5285 I vendor.qti.bluetooth@1.0-data_handler: DataHandler:: init_status 3
+04-02 15:01:41.103   459  5285 W vendor.qti.bluetooth@1.0-async_fd_watcher: StopThread: stopped the work thread
+04-02 15:01:41.103   459  5285 I vendor.qti.bluetooth@1.0-mct_transport: CleanUp:> soc_type: 0
+04-02 15:01:41.138   459  5285 W vendor.qti.bluetooth@1.0-data_handler: controller Cleanup done
+04-02 15:01:41.138   459  5285 I vendor.qti.bluetooth@1.0-data_handler: DataHandler:: joined Init thread 
+04-02 15:01:41.138   459  5285 E vendor.qti.bluetooth@1.0-wake_lock: CleanUp wake lock not initialized
+04-02 15:01:41.138   459  5285 W vendor.qti.bluetooth@1.0-bluetooth_hci: BluetoothHci::close, finish cleanup
+04-02 15:01:41.455   459  3246 W vendor.qti.bluetooth@1.0-bluetooth_hci: BluetoothHci::initialize()
+04-02 15:01:41.455   459  3246 W vendor.qti.bluetooth@1.0-data_handler: DataHandler:: Init()
+04-02 15:01:41.455   459  3246 W vendor.qti.bluetooth@1.0-data_handler: qcom.bluetooth.soc set to smd
+04-02 15:01:41.455   459  3246 I vendor.qti.bluetooth@1.0-data_handler: qcom.bluetooth.soc not set, so using pronto.
+04-02 15:01:41.455   459  3246 I vendor.qti.bluetooth@1.0-data_handler: Open init_status 0 
+04-02 15:01:41.456   459  3246 E vendor.qti.bluetooth@1.0-wake_lock: Init Failed to open wakelock file - Permission denied
+04-02 15:01:41.456   459 11422 D vendor.qti.bluetooth@1.0-mct_transport: Init:> soc_type: 44
+04-02 15:01:41.468   459 11422 I vendor.qti.bluetooth@1.0-mct_transport: Done intiailizing Bluetooth SMD transport 
+04-02 15:01:41.469   459 11422 E vendor.qti.bluetooth@1.0-wake_lock: Acquire wake lock not initialized
+04-02 15:01:41.469   459 11422 E vendor.qti.bluetooth@1.0-bluetooth_address: CMD result: 0
+04-02 15:01:41.469   459 11422 E vendor.qti.bluetooth@1.0-bluetooth_address: BD address read for NV_BD_ADDR_I: 82:d8:33:00:1d:80
+04-02 15:01:41.469   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloading NVM TAG 2
+04-02 15:01:41.469   459 11422 I vendor.qti.bluetooth@1.0-nvm_tags_manager: BD Address: 82:d8:33:00:1d:80
+04-02 15:01:41.474   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloaded NVM TAG 2
+04-02 15:01:41.474   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloading NVM TAG 95
+04-02 15:01:41.479   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloaded NVM TAG 95
+04-02 15:01:41.479   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloading NVM TAG 83
+04-02 15:01:41.484   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloaded NVM TAG 83
+04-02 15:01:41.484   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloading NVM TAG 36
+04-02 15:01:41.488   459 11422 D vendor.qti.bluetooth@1.0-nvm_tags_manager: DownloadNvmTags: Downloaded NVM TAG 36
+04-02 15:01:41.488   459 11422 I vendor.qti.bluetooth@1.0-nvm_tags_manager: HciReset: HCI RESET 
+04-02 15:01:41.564   459 11422 I vendor.qti.bluetooth@1.0-nvm_tags_manager: HciReset: HCI RESET Done
+04-02 15:01:41.565   459 11422 E vendor.qti.bluetooth@1.0-wake_lock: Release wake lock not initialized/acquired
+04-02 15:01:41.565   459 11422 D Diag_Lib: Init succeded
+04-02 15:01:41.565   459 11422 I vendor.qti.bluetooth@1.0-data_handler: Firmware download succeded
