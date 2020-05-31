@@ -142,3 +142,5 @@ Collected all diffs between logs in one file. Suggest that problem may be in str
 	* BOND_STATE_NONE = 0;
 	* BOND_STATE_BONDING = 1;
 	* BOND_STATE_BONDED = 2;
+
+Implemented log-parser to clean logs from time and process id in order to compare log files using "diff" utillity.
