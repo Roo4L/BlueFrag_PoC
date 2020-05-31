@@ -140,5 +140,5 @@ Occaisonally conducted test, where process ended with SIGSEGV, but connection af
 Collected all diffs between logs in one file. Suggest that problem may be in strange behavior of Bluetooth Bond State Machine. Looking through [BondStateMachine source file](https://android.googlesource.com/platform/packages/apps/Bluetooth/+/refs/heads/oreo-r3-release/src/com/android/bluetooth/btservice/BondStateMachine.java). Important notes:
 * Bond state codes:
 	* BOND_STATE_NONE = 0;
-    	* BOND_STATE_BONDING = 1;
-    	* BOND_STATE_BONDED = 2;
+	* BOND_STATE_BONDING = 1;
+	* BOND_STATE_BONDED = 2;
