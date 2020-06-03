@@ -33,8 +33,13 @@ hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\x
 hci.bind((0,))
 start_new_thread(recv_hci, ())
 
+connect_response = -1
 l2cap = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_L2CAP)
-l2cap.connect((sys.argv[1], 0))
+while connect_response != 0:
+    connect_response = l2cap.connect_ex((sys.argv[1], 0))
+    if (connect_response != 0):
+    	print "Error. Response code: ", connect_response
+
 start_new_thread(recv_l2cap, ())
 
 while handle == 0:

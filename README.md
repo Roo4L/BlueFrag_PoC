@@ -152,3 +152,9 @@ Comparison of /firer-logs/log5.txt and /my-logs/log-2.txt. Possible interesing d
 2) M: BluetoothServiceJni: adapter_properties_callback: Status 1 is incorrect
 3) M: BluetoothAdapterProperties: Setting state to 11
 4) ~~Reconnection time is 300 on firer's device whereas it's 120 on my device.~~
+
+
+### 03.05.20
+
+1) Check if the socket already connected
+2) List all bluetooth sockets on laptop to chech whether previous are closed. One can use *lsof -p -pid <PID>* utility to track info about running script.
