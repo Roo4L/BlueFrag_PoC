@@ -1,0 +1,82 @@
+
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+E BtGatt.ContextMap: Context not found for ID 6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=6
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+E BtGatt.ScanManager: Cannot start unfiltered scan in screen-off. This scan will be resumed later: 5
+E BtGatt.GattService: App 'com.xiaomi.hm.health' is scanning too frequently
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=5
+E BtGatt.ScanManager: Cannot start unfiltered scan in screen-off. This scan will be resumed later: 5
+W bt_btif : bta_dm_acl_change info: 0x10
+D bt_btif_dm: remote version info [b8:27:eb:72:c9:8d]: 0, 0, 0
+E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=B8:27:EB:72:C9:8D, newState=0
+D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+I bt_btif_dm: get_cod remote_cod = 0x00480000
+I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 1
+I bt_btif_dm: get_cod remote_cod = 0x00480000
+I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 10 NewState: 11
+I BluetoothBondStateMachine: Entering PendingCommandState State
+D bt_btif_config: btif_get_device_type: Device [b8:27:eb:72:c9:8d] type 1
+I bt_btif_dm: get_cod remote_cod = 0x00480000
+I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: B8:27:EB:72:C9:8D newState: 0
+D BluetoothAdapterProperties: Failed to remove device: B8:27:EB:72:C9:8D
+I BluetoothBondStateMachine: Bond State Change Intent:B8:27:EB:72:C9:8D OldState: 11 NewState: 10
+D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@3ef05ef
+I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+D A2dpSinkService: getA2dpSinkService(): service is NULL
+D HidService: Saved priority B8:27:EB:72:C9:8D = -1
+I BluetoothBondStateMachine: StableState(): Entering Off State
+W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+
+F libc : Fatal signal 11 (SIGSEGV), code 1, fault addr 0xe4380000 in tid 24850 (HwBinder:24812_), pid 24812 (droid.bluetooth)
+I libc : orig_dumpable: 0
+

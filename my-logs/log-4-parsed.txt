@@ -1,0 +1,893 @@
+
+D BluetoothOppFileProvider: Initialized
+D AdapterServiceConfig: Adding HeadsetService
+D AdapterServiceConfig: Adding A2dpService
+D AdapterServiceConfig: Adding HidService
+D AdapterServiceConfig: Adding HealthService
+D AdapterServiceConfig: Adding PanService
+D AdapterServiceConfig: Adding GattService
+D AdapterServiceConfig: Adding BluetoothMapService
+D AdapterServiceConfig: Adding HeadsetClientService
+D AdapterServiceConfig: Adding AvrcpControllerService
+D AdapterServiceConfig: Adding SapService
+W AdapterServiceConfig: Could not find profile bit mask
+D AdapterServiceConfig: Adding BluetoothOppService
+W AdapterServiceConfig: Could not find profile bit mask
+D AdapterServiceConfig: Adding BluetoothPbapService
+D BluetoothAdapterService: onCreate()
+D BluetoothAdapterState: make() - Creating AdapterState
+I bt_btif : init
+D bt_osi_allocation_tracker: canary initialized
+I BluetoothAdapterState: Entering OffState
+I bt_osi_thread: run_thread: thread id 9588, thread name stack_manager started
+I bt_stack_manager: event_init_stack is initializing the stack
+I bt_osi_thread: run_thread: thread id 9591, thread name alarm_default_ca started
+I bt_osi_thread: run_thread: thread id 9592, thread name alarm_dispatcher started
+I bt_btif_core: btif_init_bluetooth entered
+I bt_stack_config: init attempt to load stack conf from /etc/bluetooth/bt_stack.conf
+I bt_osi_thread: run_thread: thread id 9593, thread name bt_jni_workqueue started
+I bt_btif_core: btif_init_bluetooth finished
+I bt_btif_core: run_message_loop entered
+I bt_stack_manager: event_init_stack finished
+I bt_osi_wakelock: wakelock_set_os_callouts set to non-native
+I bt_btif : get_profile_interface: id = socket
+E bt_btif_storage: btif_storage_get_adapter_property: Controller not ready! Unable to return Bluetooth Address
+E BluetoothServiceJni: adapter_properties_callback: Status 1 is incorrect
+I bt_btif : get_profile_interface: id = sdp
+D BluetoothAdapterProperties: Name is: LeEco Le 2
+I BluetoothAdapterService: Phone policy enabled
+D BluetoothAdapterService: setAdapterService() - set to: null
+D BluetoothAdapterService: onBind()
+I BtGatt.JNI: classInitNative(L871): classInitNative: Success!
+D BluetoothAdapterService: enable() - Enable called with quiet mode status = false
+D BluetoothAdapterState: Current state: OFF, message: 0
+D BluetoothAdapterProperties: Setting state to 14
+I BluetoothAdapterState: Bluetooth adapter state changed: 10-> 14
+D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+D BluetoothAdapterService: BleOnProcessStart()
+D BluetoothAdapterService: BleOnProcessStart() - Make Bond State Machine
+D BluetoothBondStateMachine: make
+I BluetoothBondStateMachine: StableState(): Entering Off State
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.gatt.GattService
+I BluetoothAdapterState: Entering PendingCommandState
+D BtGatt.DebugUtils: handleDebugAction() action=null
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BtGatt.GattService: Received start request. Starting profile...
+I bt_btif : get_profile_interface: id = gatt
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+I chatty : uid=1002(bluetooth) com.android.bluetooth identical 1 line
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.gatt.GattService isTurningOn=false isTurningOff=false isBleTurningOn=true isBleTurningOff=false
+D BluetoothAdapterService: GattService is started
+V BluetoothAdapterState: PendingCommand - transient state(s): isBleTurningOn
+D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 4
+I bt_btif : enable: start restricted = 0
+I bt_stack_manager: event_start_up_stack is bringing up the stack
+I bt_core_module: module_start_up Starting module "btif_config_module"
+I bt_core_module: module_start_up Started module "btif_config_module"
+I bt_core_module: module_start_up Starting module "btsnoop_module"
+I bt_core_module: module_start_up Started module "btsnoop_module"
+I bt_core_module: module_start_up Starting module "hci_module"
+I bt_hci : hci_module_start_up
+I bt_osi_thread: run_thread: thread id 9603, thread name hci_thread started
+D bt_hci : hci_module_start_up starting async portion
+I bt_hci : hci_initialize
+I bt_hci : hci_initialize: IBluetoothHci::getService() returned 0x7f2463d480 (remote)
+I bt_hci : event_finish_startup
+I bt_core_module: module_start_up Started module "hci_module"
+I bt_osi_thread: run_thread: thread id 9608, thread name bt_workqueue started
+I : [0403/214720:INFO:btu_task.cc(107)] Bluetooth chip preload is complete
+I : [0403/214720:INFO:gatt_api.cc(1004)] GATT_Register
+I : [0403/214720:INFO:gatt_api.cc(1027)] allocated gatt_if=1
+I : [0403/214720:INFO:gatt_api.cc(207)] GATTS_AddService
+I : [0403/214720:INFO:gatt_api.cc(317)] GATTS_AddService: service parsed correctly, now starting
+E : [0403/214720:ERROR:gatt_attr.cc(301)] gatt_profile_db_init: gatt_if=1
+I : [0403/214720:INFO:gatt_api.cc(1004)] GATT_Register
+I : [0403/214720:INFO:gatt_api.cc(1027)] allocated gatt_if=2
+I : [0403/214720:INFO:gatt_api.cc(207)] GATTS_AddService
+I : [0403/214720:INFO:gatt_api.cc(317)] GATTS_AddService: service parsed correctly, now starting
+I bt_osi_thread: run_thread: thread id 9609, thread name btu message loop started
+I bt_osi_thread: run_thread: thread id 9610, thread name module_wrapper started
+I bt_core_module: module_start_up Starting module "controller_module"
+I bt_core_module: module_start_up Started module "controller_module"
+W bt_osi_thread: run_thread: thread id 9610, thread name module_wrapper exited
+W bt_btm : btm_decode_ext_features_page: feature page 1 ignored
+W bt_btm : btm_decode_ext_features_page: feature page 2 ignored
+I bt_btm_sec: BTM_SecRegister p_cb_info->p_le_callback == 0x0x7f16849d2c
+I bt_btm_sec: BTM_SecRegister btm_cb.api.p_le_callback = 0x0x7f16849d2c
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=3
+I bt_stack: [INFO:ble_advertiser_hci_interface.cc(708)] VSC advertising will be in use
+I bt_stack: [INFO:ble_advertiser_hci_interface.cc(259)] QuirkAdvertiserZeroHandle in use
+D BluetoothAdapterProperties: BT_PROPERTY_LOCAL_LE_FEATURES: update from BT controller mNumOfAdvertisementInstancesSupported = 10 mRpaOffloadSupported = true mNumOfOffloadedIrkSupported = 8 mNumOfOffloadedScanFilterSupported = 16 mOffloadedScanResultStorageBytes= 10240 mIsActivityAndEnergyReporting = true mVersSupported = 96 mTotNumOfTrackableAdv = 32 mIsExtendedScanSupported = true mIsDebugLogSupported = true mIsLe2MPhySupported = false mIsLeCodedPhySupported = false mIsLeExtendedAdvertisingSupported = false mIsLePeriodicAdvertisingSupported = false mLeMaximumAdvertisingDataLength = 31
+E bt_btif_storage: btif_storage_get_adapter_property: Controller ready!
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000000
+D BluetoothAdapterProperties: Address is:80:1D:00:33:D8:82
+D BluetoothAdapterProperties: Name is: LeEco Le 2
+D BluetoothAdapterProperties: Scan Mode:20
+D BluetoothAdapterProperties: Discoverable Timeout:120
+D BluetoothAdapterProperties: Adding bonded device:30:C0:1B:21:62:1E
+I bt_btif_core: btif_enable_bluetooth_evt entered: status 0
+I bt_osi_thread: run_thread: thread id 9612, thread name btif_sock started
+D bt_bte_conf: Device ID record 1 : primary
+D bt_bte_conf: vendorId = 000f
+D bt_bte_conf: vendorIdSource = 0001
+D bt_bte_conf: product = 1200
+D bt_bte_conf: version = 1436
+D bt_bte_conf: clientExecutableURL =
+D bt_bte_conf: serviceDescription =
+D bt_bte_conf: documentationURL =
+D bt_bte_conf: bte_load_did_conf no section named DID2.
+I bt_btif_core: btif_enable_bluetooth_evt finished
+I bt_stack_manager: event_start_up_stack finished
+V BluetoothAdapterState: PendingCommand - transient state(s): isBleTurningOn
+D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 3
+D BluetoothAdapterProperties: Setting state to 15
+I BluetoothAdapterState: Bluetooth adapter state changed: 14-> 15
+D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+I BluetoothAdapterState: Entering BleOnState
+D BluetoothAdapterState: Current state: BLE ON, message: 1
+D BluetoothAdapterProperties: Setting state to 11
+I BluetoothAdapterState: Bluetooth adapter state changed: 15-> 11
+D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+D BluetoothAdapterService: startCoreServices()
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hfp.HeadsetService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.a2dp.A2dpService
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D HeadsetService: Received start request. Starting profile...
+I BluetoothHeadsetServiceJni: classInitNative: succeeds
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hid.HidService
+D HeadsetStateMachine: make
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hdp.HealthService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.pan.PanService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.map.BluetoothMapService
+D HeadsetStateMachine: max_hf_connections = 1
+D HeadsetStateMachine: in-band_ringing_support = true
+I bt_btif : get_profile_interface: id = handsfree
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000040
+E bt_btif : btif_hf_upstreams_evt: Invalid index 35053
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hfpclient.HeadsetClientService
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D A2dpService: Received start request. Starting profile...
+I BluetoothAvrcpServiceJni: classInitNative: succeeds
+V Avrcp : make
+I bt_btif : get_profile_interface: id = avrcp
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.sap.SapService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.opp.BluetoothOppService
+D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.pbap.BluetoothPbapService
+I BluetoothAdapterState: Entering PendingCommandState
+V Avrcp : initMediaPlayerInfoList: 1 controllers
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : add #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@bd5f746) null
+V Avrcp : updatePlaybackState (1): -1➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193544887, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change -1➡0 mPlayStatusChangedNT: 1
+E bt_btif : register_notification_rsp: Avrcp device is not connected, handle: 0x0
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updateNewIds: Addressed:0 to 1, Browse:0 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@bd5f746) null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193544892, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+D Avrcp : User already unlocked, initializing player lists
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193544896, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+I BluetoothA2dpServiceJni: classInitNative: succeeds
+D A2dpStateMachine: make
+I bt_btif : get_profile_interface: id = a2dp
+I bt_osi_thread: run_thread: thread id 9616, thread name btif_a2dp_source started
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000048
+I bt_bta_av: AVRCP version used for sdp: "avrcp14"
+D a2dp_codec: init
+D a2dp_codec: createCodec: codec SBC
+I a2dp_codec: init: updated SBC codec priority to 1001
+D a2dp_codec: createCodec: codec AAC
+I a2dp_codec: init: updated AAC codec priority to 2001
+D a2dp_codec: createCodec: codec aptX
+E bt_btif : btif_sm_dispatch : Invalid handle
+E bt_btif : btif_sm_dispatch : Invalid handle
+E a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: dlopen failed: library "libaptX_encoder.so" not found
+E a2dp_vendor_aptx: init: cannot load the encoder
+D a2dp_codec: createCodec: codec aptX-HD
+E a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: dlopen failed: library "libaptXHD_encoder.so" not found
+E a2dp_vendor_aptx_hd: init: cannot load the encoder
+D a2dp_codec: createCodec: codec LDAC
+I a2dp_codec: init: updated LDAC codec priority to 5001
+D a2dp_codec: createCodec: codec SBC SINK
+I a2dp_codec: init: initialized Source codec LDAC
+I a2dp_codec: init: initialized Source codec AAC
+I a2dp_codec: init: initialized Source codec SBC
+I a2dp_codec: init: initialized Sink codec SBC(Sink)
+W bt_btif : ## ON A2DP IDLE ## peer_sep = 0
+I BluetoothA2dpServiceJni: bta2dp_audio_config_callback
+D A2dpStateMachine: A2DP Codec Config: null->{codecName:SBC,mCodecType:0,mCodecPriority:0,mSampleRate:0x0(NONE),mBitsPerSample:0x0(NONE),mChannelMode:0x0(NONE),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:LDAC,mCodecType:4,mCodecPriority:5001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: Enter Disconnected: -2
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+I BluetoothHidServiceJni: classInitNative: succeeds
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D HidService: Received start request. Starting profile...
+I bt_btif : get_profile_interface: id = hidhost
+I bt_bta_hh: BTA_HhEnable sec_mask:0x36 p_cback:0x7f168af448
+D HidService: setHidService(): set to: null
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20100048
+I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=4
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+I BluetoothHealthServiceJni: classInitNative: succeeds
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D HealthService: Received start request. Starting profile...
+I bt_btif : get_profile_interface: id = health
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+I BluetoothPanServiceJni: classInitNative(L111): succeeds
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D PanService: Received start request. Starting profile...
+D BluetoothPanServiceJni: initializeNative(L116): pan
+I bt_btif : get_profile_interface: id = pan
+D BluetoothPanServiceJni: control_state_callback(L63): state:0, local_role:3, ifname:bt-pan
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothMapService: Received start request. Starting profile...
+D BluetoothMapService: start()
+D BluetoothMapAccountLoader: Found 0 application(s) with intent android.bluetooth.action.BLUETOOTH_MAP_PROVIDER
+D BluetoothMapAccountLoader: Found 0 application(s) with intent android.bluetooth.action.BLUETOOTH_MAP_IM_PROVIDER
+D BluetoothMapAppObserver: createReceiver()
+D BluetoothMapAppObserver: initObservers()
+D BluetoothMapAppObserver: getEnabledAccountItems()
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hfp.HeadsetService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.a2dp.A2dpService
+D HeadsetPhoneState: sendDeviceStateChanged. mService=0 mIsSimStateLoaded=false mSignal=0 mRoam=0 mBatteryCharge=4
+I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D HeadsetClientService: Received start request. Starting profile...
+D BluetoothHeadsetClientServiceJni: initializeNative: HfpClient
+I bt_btif : get_profile_interface: id = handsfree_client
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+D BluetoothHeadsetClientServiceJni: initializeNative: HfpClient
+W BluetoothHeadsetClientServiceJni: Cleaning up Bluetooth HFP Client Interface before initializing
+W BluetoothHeadsetClientServiceJni: Cleaning up Bluetooth HFP Client callback object
+I bt_btif_queue: queue_int_cleanup: UUID=111E
+I bt_btif : get_profile_interface: id = handsfree_client
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+I BluetoothAvrcpControllerJni: classInitNative: succeeds
+I bt_btif : get_profile_interface: id = avrcp_ctrl
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D AvrcpControllerService: Received start request. Starting profile...
+D AvrcpControllerService: setAvrcpControllerService(): set to: null
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+V SapService: SapBinder()
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D SapService: Received start request. Starting profile...
+V SapService: start()
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothOppService: Received start request. Starting profile...
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+V BluetoothPbapService: PbapBinder()
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothPbapService: Received start request. Starting profile...
+V BluetoothPbapService: start()
+D BluetoothPbapService: Registering observer
+D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@ee6ea1a
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.a2dp.A2dpService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hid.HidService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hdp.HealthService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.pan.PanService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.map.BluetoothMapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hfpclient.HeadsetClientService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.avrcpcontroller.AvrcpControllerService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.sap.SapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.sap.SapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.pbap.BluetoothPbapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.opp.BluetoothOppService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.pbap.BluetoothPbapService
+D BluetoothAdapterService: handleMessage() - Message: 1
+D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.pbap.BluetoothPbapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+D BluetoothAdapterService: onProfileServiceStateChange() - All profile services started.
+V BluetoothAdapterState: PendingCommand - transient state(s): isTurningOn
+D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 2
+D BluetoothAdapterProperties: onBluetoothReady, state=11, ScanMode=20
+D BluetoothAdapterProperties: Setting state to 12
+I BluetoothAdapterState: Bluetooth adapter state changed: 11-> 12
+D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+D BluetoothAdapterProperties: Scan Mode:21
+D BluetoothAdapterProperties: Discoverable Timeout:120
+I BluetoothAdapterState: Entering OnState
+D BluetoothAdapterService: updateUuids() - Updating UUIDs for bonded devices
+D BluetoothAdapterProperties: Discoverable Timeout:120
+D BluetoothAdapterProperties: Scan Mode:23
+D BluetoothMapService: onReceive
+D BluetoothMapService: onReceive: android.bluetooth.adapter.action.STATE_CHANGED
+D BluetoothMapService: STATE_ON
+D BluetoothPbapService: action: android.bluetooth.adapter.action.STATE_CHANGED
+D BluetoothPbapService: state: 12
+D BluetoothPhonePolicy: Received ACTION_UUID for device 30:C0:1B:21:62:1E
+D BluetoothPhonePolicy: index=0uuid=00001108-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: index=1uuid=0000111e-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: index=2uuid=0000110b-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: index=3uuid=0000110e-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: index=4uuid=00000000-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: index=5uuid=00000000-0000-1000-8000-00805f9b34fb
+D BluetoothPhonePolicy: processInitProfilePriorities() - device 30:C0:1B:21:62:1E
+D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@95ed42c
+D BluetoothAdapterService: isQuetModeEnabled() - Enabled = false
+D BluetoothPhonePolicy: autoConnect() - Initiate auto connection on BT on...
+D BluetoothPhonePolicy: autoConnectHeadset, attempt auto-connect with device 30:C0:1B:21:62:1E
+D BluetoothPhonePolicy: autoConnectHeadset, Connecting HFP with 30:C0:1B:21:62:1E
+D HeadsetService: connect: device=30:C0:1B:21:62:1E
+D HeadsetStateMachine: Disconnected: connecting to device=30:C0:1B:21:62:1E
+D BluetoothPhonePolicy: autoConnectA2dp, attempt auto-connect with device 30:C0:1B:21:62:1E
+I BluetoothHeadsetServiceJni: connectHfpNative: sBluetoothHfpInterface: 0x7f16aa3b48
+I bt_btif_queue: queue_int_add: allocating profile queue
+D BluetoothPhonePolicy: autoConnectA2dp, connecting A2DP with 30:C0:1B:21:62:1E
+I bt_btif_queue: queue_int_add: adding connection request UUID=111F, bd_addr=30:c0:1b:21:62:1e, busy=0
+I bt_btif_queue: btif_queue_connect_next: executing connection request UUID=111F, bd_addr=30:c0:1b:21:62:1e, busy=0
+D BluetoothMapMasInstance0: Map Service startRfcommSocketListener
+D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+D A2dpStateMachine: Disconnected process message: 1
+D BtOppService: start Socket Listeners
+D BtOppService: stopListeners mServerSocket :null
+D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+D BluetoothSdpJni: sdpCreateSapsRecordNative
+D BluetoothSdpJni: SDP Create record success - handle: 0
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+D ObexServerSockets: Succeed to create listening sockets
+D ObexServerSockets0: startAccept()
+D ObexServerSockets0: prepareForNewConnect()
+D ObexServerSockets: Succeed to create listening sockets
+D ObexServerSockets1: startAccept()
+D ObexServerSockets1: prepareForNewConnect()
+I BluetoothA2dpServiceJni: connectA2dpNative: sBluetoothA2dpInterface: 0x7f16aa3610
+I bt_btif_queue: queue_int_add: adding connection request UUID=110A, bd_addr=30:c0:1b:21:62:1e, busy=0
+I bt_btif_queue: btif_queue_connect_next: executing connection request UUID=111F, bd_addr=30:c0:1b:21:62:1e, busy=1
+D A2dpStateMachine: Exit Disconnected: 1
+D A2dpStateMachine: Enter Pending: 1
+D BluetoothSdpJni: sdpCreateMapMasRecordNative
+D BluetoothSdpJni: SDP Create record success - handle: 1
+D ObexServerSockets0: Accepting socket connection...
+D ObexServerSockets1: Accepting socket connection...
+D BluetoothSdpJni: sdpCreateOppOpsRecordNative
+D BluetoothSdpJni: SDP Create record success - handle: 2
+D ObexServerSockets0: Accepting socket connection...
+D BtOppService: mOppSdpHandle :2
+D BluetoothPbapService: startsocketListener
+D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+D ObexServerSockets1: Accepting socket connection...
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+D ObexServerSockets: Succeed to create listening sockets
+D ObexServerSockets2: startAccept()
+D ObexServerSockets2: prepareForNewConnect()
+D BluetoothSdpJni: sdpCreatePbapPseRecordNative
+D BluetoothSdpJni: SDP Create record success - handle: 3
+D ObexServerSockets2: Accepting socket connection...
+D ObexServerSockets2: Accepting socket connection...
+D BluetoothPbapService: PBAP server with handle:3
+D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=1, device=30:C0:1B:21:62:1E, 0 -> 1
+D BluetoothAdapterProperties: ADAPTER_CONNECTION_STATE_CHANGE: 30:C0:1B:21:62:1E: 0 -> 1
+D A2dpStateMachine: Connection state 30:C0:1B:21:62:1E: 0->1
+D BluetoothPhonePolicy: processProfileStateChanged, device=30:C0:1B:21:62:1E, profile=1, 0 -> 1
+D BluetoothPhonePolicy: processProfileStateChanged, device=30:C0:1B:21:62:1E, profile=2, 0 -> 1
+D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=2, device=30:C0:1B:21:62:1E, 0 -> 1
+W bt_btif : bta_dm_acl_change info: 0x10
+D bt_btif_dm: remote version info [30:c0:1b:21:62:1e]: 8, a, 307e
+W bt_sdp : process_service_search_attr_rsp
+I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: 30:c0:1b:21:62:1e
+W bt_btif : new conn_srvc id:5, app_id:0
+W bt_btif : bta_dm_pm_ssr conn_srvc id:5, app_id:0
+W bt_btif : bta_dm_pm_ssr ssr:2, lat:1200
+I BluetoothHeadsetServiceJni: connection_state_callback
+D HeadsetStateMachine: Pending: processConnectionEvent, state=2, device=30:C0:1B:21:62:1E
+I BluetoothHeadsetServiceJni: cindResponseNative: sBluetoothHfpInterface: 0x7f16aa3b48
+I BluetoothHeadsetServiceJni: connection_state_callback
+I bt_btif_queue: queue_int_advance: removing connection request UUID=111F, bd_addr=30:c0:1b:21:62:1e, busy=1
+I bt_btif_queue: btif_queue_connect_next: executing connection request UUID=110A, bd_addr=30:c0:1b:21:62:1e, busy=0
+D HeadsetStateMachine: Pending: processConnectionEvent, state=3, device=30:C0:1B:21:62:1E
+I BluetoothA2dpServiceJni: bta2dp_connection_state_callback
+E bt_btif : bta_av_save_addr: reset flags
+D HeadsetStateMachine: Pending: added 30:C0:1B:21:62:1E to mConnectedDevicesList, requested by us
+D A2dpStateMachine: Pending process message: 101
+D A2dpStateMachine: Stack and target device are connecting
+D HeadsetStateMachine: configAudioParameters for device:30:C0:1B:21:62:1E are: nrec = 1
+D HeadsetStateMachine: Pending: removed CONNECT_TIMEOUT for device=30:C0:1B:21:62:1E
+D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=1, device=30:C0:1B:21:62:1E, 1 -> 2
+D BluetoothAdapterProperties: ADAPTER_CONNECTION_STATE_CHANGE: 30:C0:1B:21:62:1E: 1 -> 2
+D BluetoothPhonePolicy: processProfileStateChanged, device=30:C0:1B:21:62:1E, profile=1, 1 -> 2
+D BluetoothAdapterService: isQuetModeEnabled() - Enabled = false
+E bt_btif : bta_av_rc_create ACP handle exist for shdl:0
+W bt_btif : bta_dm_rm_cback:0, status:0
+W bt_btif : new conn_srvc id:18, app_id:0
+W bt_btif : bta_dm_pm_ssr conn_srvc id:5, app_id:0
+W bt_btif : bta_dm_pm_ssr conn_srvc id:18, app_id:0
+W bt_btif : bta_dm_pm_ssr ssr:2, lat:1200
+W bt_btif : btif_av_state_opening_handler: device 30:c0:1b:21:62:1e is already connecting, ignore incoming request
+W bt_sdp : process_service_search_attr_rsp
+D HeadsetStateMachine: Starting CLCC response timeout for device: 30:C0:1B:21:62:1E
+E HeadsetStateMachine: processVendorSpecificAt: unsupported command: +CSRSF=0,0,0,1,0,0,0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547455, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@bd5f746) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547468, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547470, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547483, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@80deef5) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@80deef5) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@80deef5) null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547511, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193547513, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548690, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@80deef5) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548706, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548707, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548724, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@33b948a) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@33b948a) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@33b948a) null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548751, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193548752, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+E a2dp_sbc: A2DP_DumpCodecInfoSbc: A2DP_ParseInfoSbc fail:13
+I BluetoothA2dpServiceJni: bta2dp_audio_config_callback
+D A2dpStateMachine: A2DP Codec Config: {codecName:SBC,mCodecType:0,mCodecPriority:0,mSampleRate:0x0(NONE),mBitsPerSample:0x0(NONE),mChannelMode:0x0(NONE),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}->{codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:LDAC,mCodecType:4,mCodecPriority:5001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Local Capability: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+D A2dpStateMachine: A2DP Codec Selectable Capability: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+I bt_bta_av: bta_av_rc_opened allow incoming AVRCP connections:1
+E bt_btif : bta_av_rc_opened rcb[0] shdl:1 lidx:3/0
+I BluetoothAvrcpControllerJni: btavrcp_connection_state_callback: conn state: rc: 1 br: 0
+D AvrcpControllerService: onConnectionStateChanged true false30:C0:1B:21:62:1E conn device null
+D AvrcpControllerSM: HandleMessage: CB_CONN_CHANGED
+V BluetoothAvrcpControllerJni: btavrcp_get_rcfeatures_callback
+V Avrcp : MSG_NATIVE_REQ_GET_RC_FEATURES: address=30:C0:1B:21:62:1E, features=0, mFeatures=0
+W bt_btif : bta_dm_rm_cback:0, status:0
+W bt_btif : bta_dm_pm_ssr conn_srvc id:5, app_id:0
+W bt_btif : bta_dm_pm_ssr conn_srvc id:18, app_id:0
+W bt_btif : bta_dm_pm_ssr ssr:2, lat:1200
+W bt_btif : btif_av_state_opening_handler: BTA_AV_OPEN_EVT status=0, edr=0x3
+I BluetoothA2dpServiceJni: bta2dp_connection_state_callback
+I bt_btif_queue: queue_int_advance: removing connection request UUID=110A, bd_addr=30:c0:1b:21:62:1e, busy=1
+D A2dpStateMachine: Pending process message: 101
+D AvrcpControllerSM: HandleMessage: CB_RC_FEATURES
+D A2dpSinkService: getA2dpSinkService(): service is NULL
+D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=12, device=30:C0:1B:21:62:1E, 0 -> 2
+W BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: unexpected transition for profile=12, device=30:C0:1B:21:62:1E, 0 -> 2
+D A2dpStateMachine: Enter Connected: 101
+D A2dpStateMachine: A2DP Playing state : device: 30:C0:1B:21:62:1E State:10->11
+D A2dpStateMachine: Connection state 30:C0:1B:21:62:1E: 1->2
+D BluetoothAdapterProperties: PROFILE_CONNECTION_STATE_CHANGE: profile=2, device=30:C0:1B:21:62:1E, 1 -> 2
+D BluetoothPhonePolicy: processProfileStateChanged, device=30:C0:1B:21:62:1E, profile=2, 1 -> 2
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_OPEN_EVT
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_CHECK_READY
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_CMD_CHECK_READY, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_CHECK_READY DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: sample_rate=44100 bits_per_sample=16 channel_count=2
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: MTU=883, peer_mtu=883 min_bitpool=2 max_bitpool=53
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: ChannelMode=3, NumOfSubBands=8, NumOfBlocks=16, AllocationMethod=0, BitRate=328, SamplingFreq=44100 BitPool=0
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: bitpool candidate: 53 (328 kbps)
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: final bit rate 328, final bit pool 53
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+E bt_btm : tBTM_SEC_DEV:0x24666e88 rs_disc_pending=0
+W bt_btif : bta_dm_check_av:0
+W bt_btif : btif_dm_cback : unhandled event (14)
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_SUSPEND
+W bt_btif : btif_av_stream_started_ready: sm_handle=611631592 state=2 flags=0x0 ready=0
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_CMD_SUSPEND, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_SUSPEND DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : poll : channel detached remotely
+W bt_btif : btif_a2dp_recv_ctrl_data: CTRL CH DETACHED
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_CLOSE_EVT
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_OPEN_EVT
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_CHECK_READY
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_CMD_CHECK_READY, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_CHECK_READY DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_SET_OUTPUT_AUDIO_CONFIG DONE
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: sample_rate=44100 bits_per_sample=16 channel_count=2
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: MTU=883, peer_mtu=883 min_bitpool=2 max_bitpool=53
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: ChannelMode=3, NumOfSubBands=8, NumOfBlocks=16, AllocationMethod=0, BitRate=328, SamplingFreq=44100 BitPool=53
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: bitpool candidate: 53 (328 kbps)
+D a2dp_sbc_encoder: a2dp_sbc_encoder_update: final bit rate 328, final bit pool 53
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+E bt_btm : tBTM_SEC_DEV:0x24666e88 rs_disc_pending=0
+W bt_btif : bta_dm_check_av:0
+W bt_btif : btif_dm_cback : unhandled event (14)
+W bt_sdp : process_service_search_attr_rsp
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_SUSPEND
+W bt_btif : btif_av_stream_started_ready: sm_handle=611631592 state=2 flags=0x0 ready=0
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_CMD_SUSPEND, status 0 ##
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_CMD_SUSPEND DONE
+V BluetoothAvrcpControllerJni: btavrcp_get_rcfeatures_callback
+W bt_btif : btif_a2dp_ctrl_cb: A2DP-CTRL-CHANNEL EVENT UIPC_RX_DATA_READY_EVT
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG
+W bt_btif : btif_a2dp_command_ack: ## a2dp ack : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG, status 0 ##
+D AvrcpControllerSM: HandleMessage: CB_RC_FEATURES
+W bt_btif : btif_a2dp_recv_ctrl_data: a2dp-ctrl-cmd : A2DP_CTRL_GET_OUTPUT_AUDIO_CONFIG DONE
+D A2dpSinkService: getA2dpSinkService(): service is NULL
+V Avrcp : MSG_NATIVE_REQ_GET_RC_FEATURES: address=30:C0:1B:21:62:1E, features=3, mFeatures=3
+V Avrcp : MSG_NATIVE_REQ_VOLUME_CHANGE: volume=59 ctype=15
+D AvrcpControllerSM: HandleMessage: 108
+D A2dpSinkService: getA2dpSinkService(): service is NULL
+E Avrcp : percent volume changed: 46%
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193549653, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550355, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@33b948a) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550369, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550371, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550390, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550392, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@45c7afb) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@45c7afb) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@45c7afb) null
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550421, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550423, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193550435, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551315, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@45c7afb) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551336, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551337, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551351, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551366, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551399, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@1fb0718) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@1fb0718) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@1fb0718) null
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551412, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551416, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193551441, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552610, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@1fb0718) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552627, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552629, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552646, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552648, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552666, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@89b8571) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@89b8571) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@89b8571) null
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552686, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552692, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193552698, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+D BluetoothPhonePolicy: processConnectOtherProfiles, device=30:C0:1B:21:62:1E
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553676, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@89b8571) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553697, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553698, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553711, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553719, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553730, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@3466f56) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@3466f56) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@3466f56) null
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553750, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553751, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193553783, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+D BluetoothAdapterProperties: Discoverable Timeout:120
+D BluetoothAdapterProperties: Scan Mode:21
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554854, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: (false) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MediaController session destroyed
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: MediaController (code.name.monkey.retromusic.debug@3466f56) null to null
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554871, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554872, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554891, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554914, actions=0, custom actions=[], active item id=-1, error=null})
+V Avrcp : ActiveSession: MediaController (code.name.monkey.retromusic.debug@d6dcbd7) null
+W Avrcp : playState object null, sending STOPPED
+V Avrcp : isBrowseSupported for code.name.monkey.retromusic.debug: false
+D Avrcp : update #1:MediaPlayerInfo code.name.monkey.retromusic.debug (as 'Music') Type = 1, SubType = 0, Status = 0 Feature Bits [40 41 42 44 45 47 48 58] Controller: MediaController (code.name.monkey.retromusic.debug@d6dcbd7) null
+V Avrcp : updateNewIds: Addressed:1 to 1, Browse:-1 to -1
+D Avrcp : updateCurrentController: null to MediaController (code.name.monkey.retromusic.debug@d6dcbd7) null
+V Avrcp : updatePlaybackState (0): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554924, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 0
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554927, actions=0, custom actions=[], active item id=-1, error=null})
+I Avrcp : Skipping update due to invalid playback state
+E Avrcp : play status change 0➡0 mPlayStatusChangedNT: 1
+D Avrcp : sendPlayPosNotificationRsp: Not registered or requesting.
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=5 param=1
+D Avrcp : sendPlayPosNotificationRsp: (true) -1 <=? -1 <=? -1 State: 0
+V Avrcp : MSG_NATIVE_REQ_REGISTER_NOTIFICATION:event=1 param=0
+V Avrcp : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=193554961, actions=0, custom actions=[], active item id=-1, error=null})
+W bt_btif : bta_dm_acl_change info: 0x10
+D bt_btif_dm: remote version info [a0:a4:c5:68:0f:dc]: 0, 0, 0
+E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=A0:A4:C5:68:0F:DC, newState=0
+D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+I bt_btif_dm: get_cod remote_cod = 0x000c010c
+I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 1
+I bt_btif_dm: get_cod remote_cod = 0x000c010c
+I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 10 NewState: 11
+I BluetoothBondStateMachine: Entering PendingCommandState State
+D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+I bt_btif_dm: get_cod remote_cod = 0x000c010c
+I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 0
+D BluetoothAdapterProperties: Failed to remove device: A0:A4:C5:68:0F:DC
+I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 11 NewState: 10
+D HidService: getHidService(): returning com.android.bluetooth.hid.HidService@95ed42c
+D A2dpSinkService: getA2dpSinkService(): service is NULL
+D HidService: Saved priority A0:A4:C5:68:0F:DC = -1
+I BluetoothBondStateMachine: StableState(): Entering Off State
+I bt_btm_sec: btm_sec_disconnected clearing pending flag handle:3 reason:19
+W bt_btif : btif_av_move_idle: ACL Disconnected state 2 bd_addr=a0:a4:c5:68:0f:dc peer_bda=30:c0:1b:21:62:1e
+D BluetoothMapService: onReceive
+D BluetoothMapService: onReceive: android.bluetooth.device.action.ACL_DISCONNECTED
+D BluetoothPbapService: action: android.bluetooth.device.action.ACL_DISCONNECTED
+D BluetoothPbapService: state: -2147483648
+W BluetoothPbapService: Unrecognized intent!

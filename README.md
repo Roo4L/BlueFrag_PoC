@@ -144,3 +144,11 @@ Collected all diffs between logs in one file. Suggest that problem may be in str
 	* BOND_STATE_BONDED = 2;
 
 Implemented log-parser to clean logs from time and process id in order to compare log files using "diff" utillity.
+
+### 02.05.20
+
+Comparison of /firer-logs/log5.txt and /my-logs/log-2.txt. Possible interesing details:
+1) ~~F: BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback~~
+2) M: BluetoothServiceJni: adapter_properties_callback: Status 1 is incorrect
+3) M: BluetoothAdapterProperties: Setting state to 11
+4) ~~Reconnection time is 300 on firer's device whereas it's 120 on my device.~~
