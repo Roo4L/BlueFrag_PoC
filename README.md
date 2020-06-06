@@ -145,7 +145,7 @@ Collected all diffs between logs in one file. Suggest that problem may be in str
 
 Implemented log-parser to clean logs from time and process id in order to compare log files using "diff" utillity.
 
-### 02.05.20
+### 02.06.20
 
 Comparison of /firer-logs/log5.txt and /my-logs/log-2.txt. Possible interesing details:
 1) ~~F: BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback~~
@@ -154,7 +154,19 @@ Comparison of /firer-logs/log5.txt and /my-logs/log-2.txt. Possible interesing d
 4) ~~Reconnection time is 300 on firer's device whereas it's 120 on my device.~~
 
 
-### 03.05.20
+### 03.06.20
 
 1) Check if the socket already connected
 2) List all bluetooth sockets on laptop to chech whether previous are closed. One can use *lsof -p -pid <PID>* utility to track info about running script.
+
+### 06.06.20
+
+Wrote shellscript for capturing debug information during script execution. The reason for connection troubles still undefined. During tests the new behavior features has been discovered. 
+1) Connection can't be restored when android device is in sleep mode. Looks like device is entering blocked state after some period of sleep time. 
+2) Script worked well for a short moment after laptop reload.
+The work have been left on moment when shell script stops on 4th state.(second execution) One can suggest that issue is host-contoroller level. Maybe hci socket connection from previos script isn't finishing.
+```
+Traceback (most recent call last):
+File "/home/copied_wonder/BlueFrag_PoC/cve_2020_0022_export/simple_leak.py", line 70, in <module> 
+while handle == 0:
+```

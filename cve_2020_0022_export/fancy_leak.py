@@ -55,7 +55,7 @@ hci.setsockopt(socket.SOL_HCI, socket.HCI_DATA_DIR,1)
 hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00')
 hci.bind((0,))
 start_new_thread(recv_hci, ())
-
+'''
 while True:
     try:
         handle = 0
@@ -65,8 +65,19 @@ while True:
     except socket.error:
         print "Retry"
         import traceback; traceback.print_exc()
+        l2cap.close()
         time.sleep(1)
-
+'''
+connect_response = -1
+pid_l2cap = 0
+while connect_response != 0:
+    handle = 0
+    l2cap = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_L2CAP)
+    connect_response = l2cap.connect_ex((sys.argv[1], 0))
+    if (connect_response != 0):
+        print "Error. Response code: ", connect_response
+        l2cap.close()
+        
 start_new_thread(recv_l2cap, ())
 
 while handle == 0:

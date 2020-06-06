@@ -1,0 +1,2 @@
+Device 80:1D:00:33:D8:82 LeEco Le 2
+Device 30:C0:1B:21:62:1E JBL Flip 4

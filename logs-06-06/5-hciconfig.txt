@@ -1,0 +1,17 @@
+hci0:	Type: Primary  Bus: USB
+	BD Address: A0:A4:C5:68:0F:DC  ACL MTU: 1021:4  SCO MTU: 96:6
+	UP RUNNING PSCAN ISCAN 
+	RX bytes:65623 acl:225 sco:0 events:4470 errors:0
+	TX bytes:740346 acl:2015 sco:0 commands:3572 errors:368
+	Features: 0xff 0xfe 0x0f 0xfe 0xdb 0xff 0x7b 0x87
+	Packet type: DM1 DM3 DM5 DH1 DH3 DH5 HV1 HV2 HV3 
+	Link policy: RSWITCH HOLD SNIFF 
+	Link mode: SLAVE ACCEPT 
+	Name: 'delorian-pc'
+	Class: 0x0c010c
+	Service Classes: Rendering, Capturing
+	Device Class: Computer, Laptop
+	HCI Version: 4.2 (0x8)  Revision: 0x100
+	LMP Version: 4.2 (0x8)  Subversion: 0x100
+	Manufacturer: Intel Corp. (2)
+
