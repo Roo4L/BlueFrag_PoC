@@ -170,3 +170,5 @@ Traceback (most recent call last):
 File "/home/copied_wonder/BlueFrag_PoC/cve_2020_0022_export/simple_leak.py", line 70, in <module> 
 while handle == 0:
 ```
+Links:
+* [Bluetooth debugging on Ubuntu](https://wiki.ubuntu.com/DebuggingBluetooth)

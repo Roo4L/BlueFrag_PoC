@@ -1,8 +1,8 @@
 hci0:	Type: Primary  Bus: USB
 	BD Address: A0:A4:C5:68:0F:DC  ACL MTU: 1021:4  SCO MTU: 96:6
 	UP RUNNING PSCAN ISCAN 
-	RX bytes:58142 acl:167 sco:0 events:4102 errors:0
-	TX bytes:652220 acl:507 sco:0 commands:3574 errors:0
+	RX bytes:75069 acl:248 sco:0 events:4537 errors:0
+	TX bytes:656406 acl:597 sco:0 commands:3774 errors:0
 	Features: 0xff 0xfe 0x0f 0xfe 0xdb 0xff 0x7b 0x87
 	Packet type: DM1 DM3 DM5 DH1 DH3 DH5 HV1 HV2 HV3 
 	Link policy: RSWITCH HOLD SNIFF 

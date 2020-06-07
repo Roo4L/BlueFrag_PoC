@@ -19,7 +19,7 @@ bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/logs-06-06/1-bluetoothctl-i
 sudo cat /var/log/syslog > ~/BlueFrag_PoC/logs-06-06/1-syslog.txt
 
 sudo python ~/BlueFrag_PoC/cve_2020_0022_export/simple_leak.py 80:1D:00:33:D8:82 70 70 2
-sleep 2
+sleep 1
 
 sudo lsof -u root > ~/BlueFrag_PoC/logs-06-06/3-lsof-all.txt
 sudo dmesg > ~/BlueFrag_PoC/logs-06-06/3-dmesg.txt

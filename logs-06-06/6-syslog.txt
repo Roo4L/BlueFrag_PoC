@@ -128,3 +128,13 @@ Jun  7 21:34:39 delorian-pc bluetoothd[1178]: src/adapter.c:new_csrk_callback() 
 Jun  7 21:34:39 delorian-pc bluetoothd[1178]: src/adapter.c:new_long_term_key_callback() hci0 new LTK for 80:1D:00:33:D8:82 type 2 enc_size 16
 Jun  7 21:34:39 delorian-pc bluetoothd[1178]: src/device.c:device_bonding_complete() bonding (nil) status 0x00
 Jun  7 21:34:39 delorian-pc bluetoothd[1178]: src/adapter.c:resume_discovery()
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/adapter.c:dev_disconnected() Device 80:1D:00:33:D8:82 disconnected, reason 1
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/adapter.c:adapter_remove_connection()
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/adapter.c:adapter_remove_connection() Removing temporary device /org/bluez/hci0/dev_80_1D_00_33_D8_82
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/device.c:device_remove() Removing device /org/bluez/hci0/dev_80_1D_00_33_D8_82
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/device.c:browse_request_cancel()
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/device.c:btd_device_unref() Freeing device /org/bluez/hci0/dev_80_1D_00_33_D8_82
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/device.c:device_free() 0x5598ab401260
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: plugins/policy.c:disconnect_cb() reason 1
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/adapter.c:bonding_attempt_complete() hci0 bdaddr 80:1D:00:33:D8:82 type 0 status 0xe
+Jun  7 21:35:01 delorian-pc bluetoothd[1178]: src/adapter.c:resume_discovery()
