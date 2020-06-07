@@ -172,3 +172,9 @@ while handle == 0:
 ```
 Links:
 * [Bluetooth debugging on Ubuntu](https://wiki.ubuntu.com/DebuggingBluetooth)
+
+### 07.07.20
+
+Found difference in *bluetoothctl-info.txt* files. Before successful execution(1) devices aren't paired, but after it devices keep connection despite I tried to close both sockets in python script. It worth to mention, that I faced troubles trying to shutdown HCI socket: I recieved error message "This operation isn't supported". (So I just skipped this part) So when next time I am trying to execute my script it loops on place from previous report.
+
+P.S.: I was told that netstat utility may not support Bluetooth socket listing because it wasn't build properly. I should try to check it later.
