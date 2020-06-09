@@ -5,29 +5,45 @@
 #	2 - information during first (successful) execution of simple_leak.py
 #	3 - information after first execution
 
+#uncomment the line below to sniff all bluetooth packets comming to controller in HEX form
 #sudo btmon > ~/BlueFrag_PoC/issue_2/btmon.txt &
+
+#kill all background processes
+trap "kill 0" EXIT
+
+#move syslog form in verbose mode
+sudo sed -i 's/bluetoothd/bluetoothd \-d/g' /lib/systemd/system/bluetooth.service
+
+#information from target device
 bluetooth_pid=$(adb shell 'pgrep droid.bluetooth')
 adb logcat --pid $bluetooth_pid > ~/BlueFrag_PoC/issue_2/1-android-logcat.txt &
+
+#snapshot of system using bluetooth before execution (1)
 sudo lsof -u root > ~/BlueFrag_PoC/issue_2/1-lsof-all.txt
 sudo dmesg > ~/BlueFrag_PoC/issue_2/1-dmesg.txt
+sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/1-syslog.txt
+
 hciconfig -a > ~/BlueFrag_PoC/issue_2/1-hciconfig.txt
 bluetoothctl show > ~/BlueFrag_PoC/issue_2/1-bluetoothctl-show.txt
 bluetoothctl devices > ~/BlueFrag_PoC/issue_2/1-bluetoothctl-devices.txt
 bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/issue_2/1-bluetoothctl-info.txt
-sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/1-syslog.txt
 
+#tested script. snapshot is integrated inside script code (2)
 sudo python ~/BlueFrag_PoC/cve_2020_0022_export_ORIGINAL/fancy_leak.py 80:1D:00:33:D8:82 70 70 2
 sleep 1
 
+#snapshot after execution (3)
 bluetooth_pid=$(adb shell 'pgrep droid.bluetooth')
 adb logcat --pid $bluetooth_pid > ~/BlueFrag_PoC/issue_2/3-android-logcat.txt &
-sudo lsof -u root > ~/BlueFrag_PoC/issue_2/1-lsof-all.txt
+
 sudo lsof -u root > ~/BlueFrag_PoC/issue_2/3-lsof-all.txt
 sudo dmesg > ~/BlueFrag_PoC/issue_2/3-dmesg.txt
+sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/3-syslog.txt
+
 hciconfig -a > ~/BlueFrag_PoC/issue_2/3-hciconfig.txt
 bluetoothctl show > ~/BlueFrag_PoC/issue_2/3-bluetoothctl-show.txt
 bluetoothctl devices > ~/BlueFrag_PoC/issue_2/3-bluetoothctl-devices.txt
 bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/issue_2/3-bluetoothctl-info.txt
-sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/3-syslog.txt
+
 kill &!
 echo Done.

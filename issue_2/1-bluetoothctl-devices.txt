@@ -1,0 +1,2 @@
+Device 4F:F8:87:19:C4:1E [LG] webOS TV UJ634V
+Device 30:C0:1B:21:62:1E JBL Flip 4
