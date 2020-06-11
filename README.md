@@ -182,3 +182,11 @@ P.S.: I was told that netstat utility may not support Bluetooth socket listing b
 ### 09.07.20
 
 Started expirements on other file (fancy_leak.py) because it's closer to the issue of article. Put all logs from debugging into issue_2 folder.
+
+### 11.07.20
+
+It was tried to change timeout limit in linux kernel by editting */sys/kernel/debug/bluetooth/hci0/supervision_timeout* --> 200, but it didn't gave any results. P.S.: props were changed entering superuser mode (*sudo -i*) and pushing echo output into prop file (*echo NEW_PROP_VALUE /PATH/TO/PROP*)
+
+Used Stack Overflow questions:
+* https://stackoverflow.com/questions/55189681/unable-to-maintain-ble-connection-bluez-linux-ios
+* https://stackoverflow.com/questions/24945620/excessive-bluetooth-le-timeouts-on-linux
