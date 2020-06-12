@@ -1,0 +1,20 @@
+test_5:
+	changed kernel settings using "echo" command and root access.
+	12
+	12
+	200
+test_6:
+	changed timeout delay.
+	12
+	12
+	500
+test_7:
+	conducted test with screen turned on.
+	12
+	12
+	500
+test_8:
+	test with capturing snoop log on android device
+	12
+	12
+	500

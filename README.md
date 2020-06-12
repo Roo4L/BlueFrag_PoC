@@ -173,20 +173,31 @@ while handle == 0:
 Links:
 * [Bluetooth debugging on Ubuntu](https://wiki.ubuntu.com/DebuggingBluetooth)
 
-### 07.07.20
+### 07.06.20
 
 Found difference in *bluetoothctl-info.txt* files. Before successful execution(1) devices aren't paired, but after it devices keep connection despite I tried to close both sockets in python script. It worth to mention, that I faced troubles trying to shutdown HCI socket: I recieved error message "This operation isn't supported". (So I just skipped this part) So when next time I am trying to execute my script it loops on place from previous report.
 
 P.S.: I was told that netstat utility may not support Bluetooth socket listing because it wasn't build properly. I should try to check it later.
 
-### 09.07.20
+### 09.06.20
 
 Started expirements on other file (fancy_leak.py) because it's closer to the issue of article. Put all logs from debugging into issue_2 folder.
 
-### 11.07.20
+### 11.06.20
 
 It was tried to change timeout limit in linux kernel by editting */sys/kernel/debug/bluetooth/hci0/supervision_timeout* --> 200, but it didn't gave any results. P.S.: props were changed entering superuser mode (*sudo -i*) and pushing echo output into prop file (*echo NEW_PROP_VALUE /PATH/TO/PROP*)
 
 Used Stack Overflow questions:
 * https://stackoverflow.com/questions/55189681/unable-to-maintain-ble-connection-bluez-linux-ios
 * https://stackoverflow.com/questions/24945620/excessive-bluetooth-le-timeouts-on-linux
+
+### 12.06.20
+
+The original report have been read again and some notes about it should be made. First, remote_handle is essential to memory leak conducting because we should place the same original handle in overwritten packet in order to recieve back echo response. Second, this team had conducted their tests without android sanitizer, so they don't face heap corruption problems and crash on SEGFAULT in the same way with Firer's device.
+
+Analyzing logs from latest tests I have mentioned that android device doesn't respond to reconnection request after daemon crash. But at the same time laptop sends only one packet for reconnection request, which means that packet can be lost while bluetooth daemon is reloading. One can suggest the reload after heap curruption takes longer than after SEGFAULT, but I don't have information about it. Basing on this the following check points should be passed:
+1) Sniff bluetooth packets **recieved** by target device in order to find out whether connection request is recieved by smartphone.
+2) Manage to get *android logcat* output while daemon crashes in order to register with what error daemon crashes.
+3) Conduct experiments with bluetooth packet content chasing goal to face SIGFAULT.
+
+P.S.: tried to sniff recieved bluetooth packet using btsnoop_hci.log, but it doesn't register recieved L2CAP packets from laptop.

@@ -1,0 +1,384 @@
+--------- beginning of main
+04-11 19:46:52.943 24289 24289 D BluetoothOppFileProvider: Initialized
+04-11 19:46:52.964 24289 24289 D AdapterServiceConfig: Adding HeadsetService
+04-11 19:46:52.965 24289 24289 D AdapterServiceConfig: Adding A2dpService
+04-11 19:46:52.965 24289 24289 D AdapterServiceConfig: Adding HidService
+04-11 19:46:52.965 24289 24289 D AdapterServiceConfig: Adding HealthService
+04-11 19:46:52.965 24289 24289 D AdapterServiceConfig: Adding PanService
+04-11 19:46:52.965 24289 24289 D AdapterServiceConfig: Adding GattService
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding BluetoothMapService
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding HeadsetClientService
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding AvrcpControllerService
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding SapService
+04-11 19:46:52.966 24289 24289 W AdapterServiceConfig: Could not find profile bit mask
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding BluetoothOppService
+04-11 19:46:52.966 24289 24289 W AdapterServiceConfig: Could not find profile bit mask
+04-11 19:46:52.966 24289 24289 D AdapterServiceConfig: Adding BluetoothPbapService
+04-11 19:46:52.982 24289 24289 D BluetoothAdapterService: onCreate()
+04-11 19:46:52.988 24289 24289 D BluetoothAdapterState: make() - Creating AdapterState
+04-11 19:46:52.989 24289 24289 I bt_btif : init
+04-11 19:46:52.990 24289 24304 I BluetoothAdapterState: Entering OffState
+04-11 19:46:52.990 24289 24289 D bt_osi_allocation_tracker: canary initialized
+04-11 19:46:52.990 24289 24305 I bt_osi_thread: run_thread: thread id 24305, thread name stack_manager started
+04-11 19:46:52.991 24289 24305 I bt_stack_manager: event_init_stack is initializing the stack
+04-11 19:46:52.991 24289 24305 E bt_osi_config: config_new unable to open file '/data/misc/bluedroid/bt_config.conf': No such file or directory
+04-11 19:46:52.991 24289 24305 W bt_btif_config: init unable to load config file: /data/misc/bluedroid/bt_config.conf; using backup.
+04-11 19:46:52.992 24289 24308 I bt_osi_thread: run_thread: thread id 24308, thread name alarm_default_ca started
+04-11 19:46:52.993 24289 24309 I bt_osi_thread: run_thread: thread id 24309, thread name alarm_dispatcher started
+04-11 19:46:52.995 24289 24305 I bt_btif_core: btif_init_bluetooth entered
+04-11 19:46:52.995 24289 24305 I bt_stack_config: init attempt to load stack conf from /etc/bluetooth/bt_stack.conf
+04-11 19:46:52.995 24289 24310 I bt_osi_thread: run_thread: thread id 24310, thread name bt_jni_workqueue started
+04-11 19:46:52.996 24289 24305 I bt_btif_core: btif_init_bluetooth finished
+04-11 19:46:52.996 24289 24305 I bt_stack_manager: event_init_stack finished
+04-11 19:46:52.996 24289 24310 I bt_btif_core: run_message_loop entered
+04-11 19:46:52.996 24289 24289 I bt_osi_wakelock: wakelock_set_os_callouts set to non-native
+04-11 19:46:52.996 24289 24289 I bt_btif : get_profile_interface: id = socket
+04-11 19:46:52.997 24289 24310 E bt_btif_storage: btif_storage_get_adapter_property: Controller not ready! Unable to return Bluetooth Address
+04-11 19:46:52.997 24289 24310 E BluetoothServiceJni: adapter_properties_callback: Status 1 is incorrect
+04-11 19:46:52.998 24289 24289 I bt_btif : get_profile_interface: id = sdp
+04-11 19:46:52.999 24289 24310 D BluetoothAdapterProperties: Name is: LeEco Le 2
+04-11 19:46:53.002 24289 24289 I BluetoothAdapterService: Phone policy enabled
+04-11 19:46:53.004 24289 24289 D BluetoothAdapterService: setAdapterService() - set to: null
+04-11 19:46:53.005 24289 24289 D BluetoothAdapterService: onBind()
+04-11 19:46:53.015 24289 24289 I BtGatt.JNI: classInitNative(L871): classInitNative: Success!
+04-11 19:46:53.015 24289 24301 D BluetoothAdapterService: enable() - Enable called with quiet mode status =  false
+04-11 19:46:53.015 24289 24304 D BluetoothAdapterState: Current state: OFF, message: 0
+04-11 19:46:53.015 24289 24304 D BluetoothAdapterProperties: Setting state to 14
+04-11 19:46:53.015 24289 24304 I BluetoothAdapterState: Bluetooth adapter state changed: 10-> 14
+04-11 19:46:53.015 24289 24304 D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+04-11 19:46:53.016 24289 24304 D BluetoothAdapterService: BleOnProcessStart()
+04-11 19:46:53.019 24289 24304 D BluetoothAdapterService: BleOnProcessStart() - Make Bond State Machine
+04-11 19:46:53.019 24289 24304 D BluetoothBondStateMachine: make
+04-11 19:46:53.020 24289 24316 I BluetoothBondStateMachine: StableState(): Entering Off State
+04-11 19:46:53.021 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.gatt.GattService
+04-11 19:46:53.023 24289 24304 I BluetoothAdapterState: Entering PendingCommandState
+04-11 19:46:53.023 24289 24289 D BtGatt.DebugUtils: handleDebugAction() action=null
+04-11 19:46:53.023 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.024 24289 24289 D BtGatt.GattService: Received start request. Starting profile...
+04-11 19:46:53.024 24289 24289 I bt_btif : get_profile_interface: id = gatt
+04-11 19:46:53.025 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.030 24289 24289 I chatty  : uid=1002(bluetooth) com.android.bluetooth identical 1 line
+04-11 19:46:53.030 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.031 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.032 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.032 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.gatt.GattService isTurningOn=false isTurningOff=false isBleTurningOn=true isBleTurningOff=false
+04-11 19:46:53.032 24289 24289 D BluetoothAdapterService: GattService is started
+04-11 19:46:53.032 24289 24304 V BluetoothAdapterState: PendingCommand - transient state(s): isBleTurningOn
+04-11 19:46:53.032 24289 24304 D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 4
+04-11 19:46:53.034 24289 24304 I bt_btif : enable: start restricted = 0
+04-11 19:46:53.034 24289 24305 I bt_stack_manager: event_start_up_stack is bringing up the stack
+04-11 19:46:53.034 24289 24305 I bt_core_module: module_start_up Starting module "btif_config_module"
+04-11 19:46:53.034 24289 24305 I bt_core_module: module_start_up Started module "btif_config_module"
+04-11 19:46:53.035 24289 24305 I bt_core_module: module_start_up Starting module "btsnoop_module"
+04-11 19:46:53.035 24289 24305 I bt_core_module: module_start_up Started module "btsnoop_module"
+04-11 19:46:53.035 24289 24305 I bt_core_module: module_start_up Starting module "hci_module"
+04-11 19:46:53.035 24289 24305 I bt_hci  : hci_module_start_up
+04-11 19:46:53.035 24289 24320 I bt_osi_thread: run_thread: thread id 24320, thread name hci_thread started
+04-11 19:46:53.036 24289 24305 D bt_hci  : hci_module_start_up starting async portion
+04-11 19:46:53.036 24289 24320 I bt_hci  : hci_initialize
+04-11 19:46:53.039 24289 24320 I bt_hci  : hci_initialize: IBluetoothHci::getService() returned 0x7f0263d480 (remote)
+04-11 19:46:53.136 24289 24320 I bt_hci  : event_finish_startup
+04-11 19:46:53.137 24289 24305 I bt_core_module: module_start_up Started module "hci_module"
+04-11 19:46:53.138 24289 24325 I bt_osi_thread: run_thread: thread id 24325, thread name bt_workqueue started
+04-11 19:46:53.139 24289 24325 I         : [0411/194653:INFO:btu_task.cc(107)] Bluetooth chip preload is complete
+04-11 19:46:53.139 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(1004)] GATT_Register
+04-11 19:46:53.139 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(1027)] allocated gatt_if=1
+04-11 19:46:53.139 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(207)] GATTS_AddService
+04-11 19:46:53.139 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(317)] GATTS_AddService: service parsed correctly, now starting
+04-11 19:46:53.140 24289 24325 E         : [0411/194653:ERROR:gatt_attr.cc(301)] gatt_profile_db_init:  gatt_if=1
+04-11 19:46:53.140 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(1004)] GATT_Register
+04-11 19:46:53.140 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(1027)] allocated gatt_if=2
+04-11 19:46:53.140 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(207)] GATTS_AddService
+04-11 19:46:53.140 24289 24325 I         : [0411/194653:INFO:gatt_api.cc(317)] GATTS_AddService: service parsed correctly, now starting
+04-11 19:46:53.140 24289 24326 I bt_osi_thread: run_thread: thread id 24326, thread name btu message loop started
+04-11 19:46:53.142 24289 24327 I bt_osi_thread: run_thread: thread id 24327, thread name module_wrapper started
+04-11 19:46:53.142 24289 24327 I bt_core_module: module_start_up Starting module "controller_module"
+04-11 19:46:53.355 24289 24327 I bt_core_module: module_start_up Started module "controller_module"
+04-11 19:46:53.356 24289 24327 W bt_osi_thread: run_thread: thread id 24327, thread name module_wrapper exited
+04-11 19:46:53.357 24289 24325 W bt_btm  : btm_decode_ext_features_page: feature page 1 ignored
+04-11 19:46:53.357 24289 24325 W bt_btm  : btm_decode_ext_features_page: feature page 2 ignored
+04-11 19:46:53.360 24289 24326 I bt_btm_sec: BTM_SecRegister p_cb_info->p_le_callback == 0x0x7ef4b39d2c
+04-11 19:46:53.360 24289 24326 I bt_btm_sec: BTM_SecRegister btm_cb.api.p_le_callback = 0x0x7ef4b39d2c 
+04-11 19:46:53.363 24289 24326 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+04-11 19:46:53.363 24289 24326 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=3
+04-11 19:46:53.400 24289 24326 I bt_stack: [INFO:ble_advertiser_hci_interface.cc(708)] VSC advertising will be in use
+04-11 19:46:53.401 24289 24326 I bt_stack: [INFO:ble_advertiser_hci_interface.cc(259)] QuirkAdvertiserZeroHandle in use
+04-11 19:46:53.402 24289 24310 D BluetoothAdapterProperties: BT_PROPERTY_LOCAL_LE_FEATURES: update from BT controller mNumOfAdvertisementInstancesSupported = 10 mRpaOffloadSupported = true mNumOfOffloadedIrkSupported = 8 mNumOfOffloadedScanFilterSupported = 16 mOffloadedScanResultStorageBytes= 10240 mIsActivityAndEnergyReporting = true mVersSupported = 96 mTotNumOfTrackableAdv = 32 mIsExtendedScanSupported = true mIsDebugLogSupported = true mIsLe2MPhySupported = false mIsLeCodedPhySupported = false mIsLeExtendedAdvertisingSupported = false mIsLePeriodicAdvertisingSupported = false mLeMaximumAdvertisingDataLength = 31
+04-11 19:46:53.409 24289 24310 E bt_btif_storage: btif_storage_get_adapter_property: Controller ready!
+04-11 19:46:53.409 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000000
+04-11 19:46:53.411 24289 24310 D BluetoothAdapterProperties: Address is:80:1D:00:33:D8:82
+04-11 19:46:53.416 24289 24310 D BluetoothAdapterProperties: Name is: LeEco Le 2
+04-11 19:46:53.420 24289 24310 D BluetoothAdapterProperties: Scan Mode:20
+04-11 19:46:53.420 24289 24310 D BluetoothAdapterProperties: Discoverable Timeout:120
+04-11 19:46:53.421 24289 24310 I bt_btif_core: btif_enable_bluetooth_evt entered: status 0
+04-11 19:46:53.423 24289 24329 I bt_osi_thread: run_thread: thread id 24329, thread name btif_sock started
+04-11 19:46:53.424 24289 24310 D bt_bte_conf: Device ID record 1 : primary
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   vendorId            = 000f
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   vendorIdSource      = 0001
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   product             = 1200
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   version             = 1436
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   clientExecutableURL = 
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   serviceDescription  = 
+04-11 19:46:53.425 24289 24310 D bt_bte_conf:   documentationURL    = 
+04-11 19:46:53.425 24289 24310 D bt_bte_conf: bte_load_did_conf no section named DID2.
+04-11 19:46:53.425 24289 24310 I bt_btif_core: btif_enable_bluetooth_evt finished
+04-11 19:46:53.426 24289 24305 I bt_stack_manager: event_start_up_stack finished
+04-11 19:46:53.426 24289 24304 V BluetoothAdapterState: PendingCommand - transient state(s): isBleTurningOn
+04-11 19:46:53.427 24289 24304 D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 3
+04-11 19:46:53.427 24289 24304 D BluetoothAdapterProperties: Setting state to 15
+04-11 19:46:53.427 24289 24304 I BluetoothAdapterState: Bluetooth adapter state changed: 14-> 15
+04-11 19:46:53.427 24289 24304 D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+04-11 19:46:53.428 24289 24304 I BluetoothAdapterState: Entering BleOnState
+04-11 19:46:53.431 24289 24304 D BluetoothAdapterState: Current state: BLE ON, message: 1
+04-11 19:46:53.431 24289 24304 D BluetoothAdapterProperties: Setting state to 11
+04-11 19:46:53.432 24289 24304 I BluetoothAdapterState: Bluetooth adapter state changed: 15-> 11
+04-11 19:46:53.433 24289 24304 D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+04-11 19:46:53.433 24289 24304 D BluetoothAdapterService: startCoreServices()
+04-11 19:46:53.434 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hfp.HeadsetService
+04-11 19:46:53.437 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.a2dp.A2dpService
+04-11 19:46:53.439 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.440 24289 24289 D HeadsetService: Received start request. Starting profile...
+04-11 19:46:53.442 24289 24289 I BluetoothHeadsetServiceJni: classInitNative: succeeds
+04-11 19:46:53.443 24289 24289 D HeadsetStateMachine: make
+04-11 19:46:53.444 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hid.HidService
+04-11 19:46:53.447 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hdp.HealthService
+04-11 19:46:53.451 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.pan.PanService
+04-11 19:46:53.455 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.map.BluetoothMapService
+04-11 19:46:53.459 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.hfpclient.HeadsetClientService
+04-11 19:46:53.464 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+04-11 19:46:53.465 24289 24289 D HeadsetStateMachine: max_hf_connections = 1
+04-11 19:46:53.466 24289 24289 D HeadsetStateMachine: in-band_ringing_support = true
+04-11 19:46:53.466 24289 24289 I bt_btif : get_profile_interface: id = handsfree
+04-11 19:46:53.467 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000040
+04-11 19:46:53.467 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.467 24289 24310 E bt_btif : btif_hf_upstreams_evt: Invalid index 53444
+04-11 19:46:53.467 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.469 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.sap.SapService
+04-11 19:46:53.471 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.473 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.474 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.opp.BluetoothOppService
+04-11 19:46:53.474 24289 24289 D A2dpService: Received start request. Starting profile...
+04-11 19:46:53.475 24289 24289 I BluetoothAvrcpServiceJni: classInitNative: succeeds
+04-11 19:46:53.475 24289 24289 V Avrcp   : make
+04-11 19:46:53.476 24289 24304 D BluetoothAdapterService: setProfileServiceState() - Starting service com.android.bluetooth.pbap.BluetoothPbapService
+04-11 19:46:53.477 24289 24289 I bt_btif : get_profile_interface: id = avrcp
+04-11 19:46:53.479 24289 24304 I BluetoothAdapterState: Entering PendingCommandState
+04-11 19:46:53.492 24289 24289 V Avrcp   : initMediaPlayerInfoList: 0 controllers
+04-11 19:46:53.496 24289 24289 V Avrcp   : updatePlaybackState (1): -1➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=339815380, actions=0, custom actions=[], active item id=-1, error=null})
+04-11 19:46:53.496 24289 24289 I Avrcp   : Skipping update due to invalid playback state
+04-11 19:46:53.496 24289 24289 E Avrcp   : play status change -1➡0 mPlayStatusChangedNT: 1
+04-11 19:46:53.496 24289 24289 E bt_btif : register_notification_rsp: Avrcp device is not connected, handle: 0x0
+04-11 19:46:53.496 24289 24289 D Avrcp   : sendPlayPosNotificationRsp: Not registered or requesting.
+04-11 19:46:53.498 24289 24289 D Avrcp   : User already unlocked, initializing player lists
+04-11 19:46:53.500 24289 24289 V Avrcp   : updatePlaybackState (1): 0➡0(PlaybackState {state=0, position=-1, buffered position=0, speed=0.0, updated=339815386, actions=0, custom actions=[], active item id=-1, error=null})
+04-11 19:46:53.500 24289 24289 I Avrcp   : Skipping update due to invalid playback state
+04-11 19:46:53.500 24289 24289 E Avrcp   : play status change 0➡0 mPlayStatusChangedNT: 1
+04-11 19:46:53.500 24289 24289 D Avrcp   : sendPlayPosNotificationRsp: Not registered or requesting.
+04-11 19:46:53.503 24289 24289 I BluetoothA2dpServiceJni: classInitNative: succeeds
+04-11 19:46:53.503 24289 24289 D A2dpStateMachine: make
+04-11 19:46:53.505 24289 24289 I bt_btif : get_profile_interface: id = a2dp
+04-11 19:46:53.506 24289 24333 I bt_osi_thread: run_thread: thread id 24333, thread name btif_a2dp_source started
+04-11 19:46:53.506 24289 24289 D a2dp_codec: init
+04-11 19:46:53.506 24289 24289 D a2dp_codec: createCodec: codec SBC
+04-11 19:46:53.506 24289 24289 I a2dp_codec: init: updated SBC codec priority to 1001
+04-11 19:46:53.506 24289 24289 D a2dp_codec: createCodec: codec AAC
+04-11 19:46:53.506 24289 24289 I a2dp_codec: init: updated AAC codec priority to 2001
+04-11 19:46:53.506 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20000048
+04-11 19:46:53.506 24289 24326 I bt_bta_av: AVRCP version used for sdp: "avrcp14"
+04-11 19:46:53.507 24289 24289 D a2dp_codec: createCodec: codec aptX
+04-11 19:46:53.507 24289 24310 E bt_btif : btif_sm_dispatch : Invalid handle
+04-11 19:46:53.508 24289 24310 E bt_btif : btif_sm_dispatch : Invalid handle
+04-11 19:46:53.509 24289 24289 E a2dp_vendor_aptx_encoder: A2DP_VendorLoadEncoderAptx: cannot open aptX encoder library libaptX_encoder.so: dlopen failed: library "libaptX_encoder.so" not found
+04-11 19:46:53.509 24289 24289 E a2dp_vendor_aptx: init: cannot load the encoder
+04-11 19:46:53.509 24289 24289 D a2dp_codec: createCodec: codec aptX-HD
+04-11 19:46:53.510 24289 24289 E a2dp_vendor_aptx_hd_encoder: A2DP_VendorLoadEncoderAptxHd: cannot open aptX-HD encoder library libaptXHD_encoder.so: dlopen failed: library "libaptXHD_encoder.so" not found
+04-11 19:46:53.510 24289 24289 E a2dp_vendor_aptx_hd: init: cannot load the encoder
+04-11 19:46:53.510 24289 24289 D a2dp_codec: createCodec: codec LDAC
+04-11 19:46:53.515 24289 24289 I a2dp_codec: init: updated LDAC codec priority to 5001
+04-11 19:46:53.515 24289 24289 D a2dp_codec: createCodec: codec SBC SINK
+04-11 19:46:53.515 24289 24289 I a2dp_codec: init: initialized Source codec LDAC
+04-11 19:46:53.515 24289 24289 I a2dp_codec: init: initialized Source codec AAC
+04-11 19:46:53.515 24289 24289 I a2dp_codec: init: initialized Source codec SBC
+04-11 19:46:53.515 24289 24289 I a2dp_codec: init: initialized Sink codec SBC(Sink)
+04-11 19:46:53.515 24289 24289 W bt_btif : ## ON A2DP IDLE ## peer_sep = 0
+04-11 19:46:53.516 24289 24310 I BluetoothA2dpServiceJni: bta2dp_audio_config_callback
+04-11 19:46:53.516 24289 24332 D A2dpStateMachine: Enter Disconnected: -2
+04-11 19:46:53.517 24289 24310 D A2dpStateMachine: A2DP Codec Config: null->{codecName:SBC,mCodecType:0,mCodecPriority:0,mSampleRate:0x0(NONE),mBitsPerSample:0x0(NONE),mChannelMode:0x0(NONE),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+04-11 19:46:53.517 24289 24310 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:LDAC,mCodecType:4,mCodecPriority:5001,mSampleRate:0xf(44100|48000|88200|96000),mBitsPerSample:0x7(16|24|32),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+04-11 19:46:53.517 24289 24310 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:AAC,mCodecType:1,mCodecPriority:2001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x2(STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+04-11 19:46:53.517 24289 24310 D A2dpStateMachine: A2DP Codec Local Capability: {codecName:SBC,mCodecType:0,mCodecPriority:1001,mSampleRate:0x1(44100),mBitsPerSample:0x1(16),mChannelMode:0x3(MONO|STEREO),mCodecSpecific1:0,mCodecSpecific2:0,mCodecSpecific3:0,mCodecSpecific4:0}
+04-11 19:46:53.519 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.519 24289 24289 I BluetoothHidServiceJni: classInitNative: succeeds
+04-11 19:46:53.522 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.523 24289 24289 D HidService: Received start request. Starting profile...
+04-11 19:46:53.523 24289 24289 I bt_btif : get_profile_interface: id = hidhost
+04-11 19:46:53.523 24289 24289 D HidService: setHidService(): set to: null
+04-11 19:46:53.524 24289 24310 I bt_bta_hh: BTA_HhEnable sec_mask:0x36 p_cback:0x7ef4b9f448
+04-11 19:46:53.524 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.524 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x20100048
+04-11 19:46:53.524 24289 24326 I bt_stack: [INFO:gatt_api.cc(1004)] GATT_Register
+04-11 19:46:53.524 24289 24326 I bt_stack: [INFO:gatt_api.cc(1027)] allocated gatt_if=4
+04-11 19:46:53.524 24289 24289 I BluetoothHealthServiceJni: classInitNative: succeeds
+04-11 19:46:53.526 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.527 24289 24289 D HealthService: Received start request. Starting profile...
+04-11 19:46:53.528 24289 24289 I bt_btif : get_profile_interface: id = health
+04-11 19:46:53.529 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.529 24289 24289 I BluetoothPanServiceJni: classInitNative(L111): succeeds
+04-11 19:46:53.531 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.532 24289 24289 D PanService: Received start request. Starting profile...
+04-11 19:46:53.532 24289 24289 D BluetoothPanServiceJni: initializeNative(L116): pan
+04-11 19:46:53.532 24289 24289 I bt_btif : get_profile_interface: id = pan
+04-11 19:46:53.533 24289 24310 D BluetoothPanServiceJni: control_state_callback(L63): state:0, local_role:3, ifname:bt-pan
+04-11 19:46:53.533 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.542 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.543 24289 24289 D BluetoothMapService: Received start request. Starting profile...
+04-11 19:46:53.543 24289 24289 D BluetoothMapService: start()
+04-11 19:46:53.549 24289 24289 D BluetoothMapAccountLoader: Found 0 application(s) with intent android.bluetooth.action.BLUETOOTH_MAP_PROVIDER
+04-11 19:46:53.550 24289 24289 D BluetoothMapAccountLoader: Found 0 application(s) with intent android.bluetooth.action.BLUETOOTH_MAP_IM_PROVIDER
+04-11 19:46:53.551 24289 24289 D BluetoothMapAppObserver: createReceiver()
+04-11 19:46:53.553 24289 24289 D BluetoothMapAppObserver: initObservers()
+04-11 19:46:53.554 24289 24289 D BluetoothMapAppObserver: getEnabledAccountItems()
+04-11 19:46:53.554 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.555 24289 24289 I BluetoothHeadsetClientServiceJni: classInitNative succeeds
+04-11 19:46:53.558 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.558 24289 24289 D HeadsetClientService: Received start request. Starting profile...
+04-11 19:46:53.559 24289 24289 D BluetoothHeadsetClientServiceJni: initializeNative: HfpClient
+04-11 19:46:53.559 24289 24289 I bt_btif : get_profile_interface: id = handsfree_client
+04-11 19:46:53.559 24289 24310 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.560 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+04-11 19:46:53.566 24289 24289 D BluetoothHeadsetClientServiceJni: initializeNative: HfpClient
+04-11 19:46:53.566 24289 24289 W BluetoothHeadsetClientServiceJni: Cleaning up Bluetooth HFP Client Interface before initializing
+04-11 19:46:53.566 24289 24289 W BluetoothHeadsetClientServiceJni: Cleaning up Bluetooth HFP Client callback object
+04-11 19:46:53.566 24289 24289 I bt_btif : get_profile_interface: id = handsfree_client
+04-11 19:46:53.566 24289 24310 I bt_btif_queue: queue_int_cleanup: UUID=111E
+04-11 19:46:53.567 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.569 24289 24289 I BluetoothAvrcpControllerJni: classInitNative: succeeds
+04-11 19:46:53.569 24289 24289 I bt_btif : get_profile_interface: id = avrcp_ctrl
+04-11 19:46:53.570 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+04-11 19:46:53.571 24289 24310 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.571 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.571 24289 24310 I bt_btif_storage: btif_storage_get_adapter_property service_mask:0x21100048
+04-11 19:46:53.572 24289 24289 D AvrcpControllerService: Received start request. Starting profile...
+04-11 19:46:53.583 24289 24289 D AvrcpControllerService: setAvrcpControllerService(): set to: null
+04-11 19:46:53.584 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.584 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.589 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.589 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hfp.HeadsetService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.590 24289 24330 D HeadsetPhoneState: sendDeviceStateChanged. mService=0 mIsSimStateLoaded=false mSignal=0 mRoam=0 mBatteryCharge=3
+04-11 19:46:53.590 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.a2dp.A2dpService
+04-11 19:46:53.592 24289 24289 V SapService: SapBinder()
+04-11 19:46:53.593 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.594 24289 24289 D SapService: Received start request. Starting profile...
+04-11 19:46:53.594 24289 24289 V SapService: start()
+04-11 19:46:53.596 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.608 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.609 24289 24289 D BluetoothOppService: Received start request. Starting profile...
+04-11 19:46:53.610 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.611 24289 24289 V BluetoothPbapService: PbapBinder()
+04-11 19:46:53.612 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.612 24289 24289 D BluetoothPbapService: Received start request. Starting profile...
+04-11 19:46:53.612 24289 24289 V BluetoothPbapService: start()
+04-11 19:46:53.615 24289 24289 D BluetoothPbapService: Registering observer
+04-11 19:46:53.622 24289 24289 D BluetoothAdapterService: getAdapterService() - returning com.android.bluetooth.btservice.AdapterService@e97793c
+04-11 19:46:53.622 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.a2dp.A2dpService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.623 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hid.HidService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hdp.HealthService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.624 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.pan.PanService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.625 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.map.BluetoothMapService
+04-11 19:46:53.625 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.625 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.625 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.map.BluetoothMapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.625 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.hfpclient.HeadsetClientService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.avrcpcontroller.AvrcpControllerService
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.626 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.avrcpcontroller.AvrcpControllerService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.627 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.sap.SapService
+04-11 19:46:53.627 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.627 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.628 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.sap.SapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.629 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.pbap.BluetoothPbapService
+04-11 19:46:53.630 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.630 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.631 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.opp.BluetoothOppService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.631 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - Profile still not running:com.android.bluetooth.pbap.BluetoothPbapService
+04-11 19:46:53.636 24289 24289 D BluetoothAdapterService: handleMessage() - Message: 1
+04-11 19:46:53.636 24289 24289 D BluetoothAdapterService: handleMessage() - MESSAGE_PROFILE_SERVICE_STATE_CHANGED
+04-11 19:46:53.637 24289 24289 D BluetoothAdapterService: processProfileServiceStateChanged() - serviceName=com.android.bluetooth.pbap.BluetoothPbapService isTurningOn=true isTurningOff=false isBleTurningOn=false isBleTurningOff=false
+04-11 19:46:53.639 24289 24289 D BluetoothAdapterService: onProfileServiceStateChange() - All profile services started.
+04-11 19:46:53.639 24289 24304 V BluetoothAdapterState: PendingCommand - transient state(s): isTurningOn
+04-11 19:46:53.639 24289 24304 D BluetoothAdapterState: Current state: PENDING_COMMAND, message: 2
+04-11 19:46:53.639 24289 24304 D BluetoothAdapterProperties: onBluetoothReady, state=11, ScanMode=20
+04-11 19:46:53.640 24289 24304 D BluetoothAdapterProperties: Setting state to 12
+04-11 19:46:53.640 24289 24304 I BluetoothAdapterState: Bluetooth adapter state changed: 11-> 12
+04-11 19:46:53.640 24289 24304 D BluetoothAdapterService: updateAdapterState() - Broadcasting state to 1 receivers.
+04-11 19:46:53.641 24289 24304 I BluetoothAdapterState: Entering OnState
+04-11 19:46:53.642 24289 24304 D BluetoothAdapterService: updateUuids() - Updating UUIDs for bonded devices
+04-11 19:46:53.642 24289 24310 D BluetoothAdapterProperties: Scan Mode:21
+04-11 19:46:53.643 24289 24310 D BluetoothAdapterProperties: Discoverable Timeout:120
+04-11 19:46:53.664 24289 24289 D BluetoothMapService: onReceive
+04-11 19:46:53.665 24289 24289 D BluetoothMapService: onReceive: android.bluetooth.adapter.action.STATE_CHANGED
+04-11 19:46:53.665 24289 24289 D BluetoothMapService: STATE_ON
+04-11 19:46:53.666 24289 24310 D BluetoothAdapterProperties: Discoverable Timeout:120
+04-11 19:46:53.667 24289 24310 D BluetoothAdapterProperties: Scan Mode:23
+04-11 19:46:53.673 24289 24289 D BluetoothPbapService: action: android.bluetooth.adapter.action.STATE_CHANGED
+04-11 19:46:53.673 24289 24289 D BluetoothPbapService: state: 12
+04-11 19:46:53.679 24289 24289 D BluetoothAdapterService: isQuetModeEnabled() - Enabled = false
+04-11 19:46:53.679 24289 24289 D BluetoothPhonePolicy: autoConnect() - Initiate auto connection on BT on...
+04-11 19:46:53.682 24289 24289 D BtOppService: start Socket Listeners
+04-11 19:46:53.682 24289 24289 D BtOppService: stopListeners   mServerSocket :null
+04-11 19:46:53.683 24289 24289 D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+04-11 19:46:53.685 24289 24289 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.685 24289 24348 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.685 24289 24337 D BluetoothMapMasInstance0: Map Service startRfcommSocketListener
+04-11 19:46:53.685 24289 24337 D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+04-11 19:46:53.687 24289 24337 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.687 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.688 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.688 24289 24348 D BluetoothSdpJni: sdpCreateSapsRecordNative
+04-11 19:46:53.689 24289 24348 D BluetoothSdpJni: SDP Create record success - handle: 0
+04-11 19:46:53.689 24289 24289 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.689 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.690 24289 24337 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.692 24289 24289 D ObexServerSockets: Succeed to create listening sockets 
+04-11 19:46:53.693 24289 24337 D ObexServerSockets: Succeed to create listening sockets 
+04-11 19:46:53.693 24289 24289 D ObexServerSockets0: startAccept()
+04-11 19:46:53.693 24289 24289 D ObexServerSockets0: prepareForNewConnect()
+04-11 19:46:53.693 24289 24337 D ObexServerSockets1: startAccept()
+04-11 19:46:53.693 24289 24337 D ObexServerSockets1: prepareForNewConnect()
+04-11 19:46:53.696 24289 24337 D BluetoothSdpJni: sdpCreateMapMasRecordNative
+04-11 19:46:53.696 24289 24337 D BluetoothSdpJni: SDP Create record success - handle: 1
+04-11 19:46:53.699 24289 24289 D BluetoothSdpJni: sdpCreateOppOpsRecordNative
+04-11 19:46:53.699 24289 24289 D BluetoothSdpJni: SDP Create record success - handle: 2
+04-11 19:46:53.700 24289 24289 D BtOppService: mOppSdpHandle :2
+04-11 19:46:53.701 24289 24350 D ObexServerSockets1: Accepting socket connection...
+04-11 19:46:53.701 24289 24349 D ObexServerSockets0: Accepting socket connection...
+04-11 19:46:53.701 24289 24289 D BluetoothPbapService: startsocketListener
+04-11 19:46:53.702 24289 24289 D ObexServerSockets: create(rfcomm = -2, l2capPsm = -2)
+04-11 19:46:53.702 24289 24351 D ObexServerSockets1: Accepting socket connection...
+04-11 19:46:53.702 24289 24352 D ObexServerSockets0: Accepting socket connection...
+04-11 19:46:53.704 24289 24289 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.707 24289 24326 I bt_stack: [INFO:port_api.cc(123)] RFCOMM_CreateConnection BDA: ff:ff:ff:ff:ff:ff
+04-11 19:46:53.708 24289 24289 W BluetoothAdapter: getBluetoothService() called with no BluetoothManagerCallback
+04-11 19:46:53.710 24289 24289 D ObexServerSockets: Succeed to create listening sockets 
+04-11 19:46:53.711 24289 24289 D ObexServerSockets2: startAccept()
+04-11 19:46:53.711 24289 24289 D ObexServerSockets2: prepareForNewConnect()
+04-11 19:46:53.712 24289 24289 D BluetoothSdpJni: sdpCreatePbapPseRecordNative
+04-11 19:46:53.712 24289 24289 D BluetoothSdpJni: SDP Create record success - handle: 3
+04-11 19:46:53.712 24289 24353 D ObexServerSockets2: Accepting socket connection...
+04-11 19:46:53.713 24289 24354 D ObexServerSockets2: Accepting socket connection...
+04-11 19:46:53.714 24289 24289 D BluetoothPbapService: PBAP server with handle:3

